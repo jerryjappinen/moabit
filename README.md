@@ -12,37 +12,34 @@ npm install moabit --save
 
 ```scss
 // Import default variables
-@import 'moabit';
+// These will NOT output any CSS
+@import 'moabit/variables';
+@import 'moabit/functions';
+@import 'moabit/mixins';
 
-// Override default variables
+// Override default variables to match your style
 // See moabit/variables.scss
-@import './variables';
+@import './my-variables';
 
 // Resets and normalizations
+// These WILL output CSS
+@import 'moabit/font-face';
 @import 'moabit/normalize';
 
 // The rest of your style codebase
-@import '.global.scss';
+// @import './defaults/forms';
+// @import './foo/bar';
+// @import './utilities/my-utilities';
 ```
 
-## What's included
+## Importing in JavaScript
 
 ```js
 import 'moabit/variables'
 import 'moabit/functions'
 import 'moabit/mixins'
-import 'moabit/normalize'
 
 import './my-custom-variables'
-```
 
-Or your Sass files:
-
-```scss
-@import 'moabit/variables';
-@import 'moabit/functions';
-@import 'moabit/mixins';
-@import 'moabit/normalize';
-
-@import './my-custom-variables';
+import 'moabit/normalize'
 ```
