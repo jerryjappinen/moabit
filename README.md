@@ -17,9 +17,9 @@ Import default variables, functions and mixins in your Sass files:
 ```scss
 // Import default variables
 // These will NOT output any CSS
-@import 'moabit/variables';
-@import 'moabit/functions';
-@import 'moabit/mixins';
+@import '~moabit/variables';
+@import '~moabit/functions';
+@import '~moabit/mixins';
 
 // Override default variables to match your style
 // See moabit/variables.scss
@@ -27,8 +27,8 @@ Import default variables, functions and mixins in your Sass files:
 
 // Resets and normalizations (optional)
 // These WILL output CSS
-@import 'moabit/font-face';
-@import 'moabit/normalize';
+@import '~moabit/font-face';
+@import '~moabit/normalize';
 
 // The rest of your style codebase
 // @import './defaults/forms';

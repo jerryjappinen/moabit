@@ -1,7 +1,4 @@
-// Basics
-
-// NOTE: should be auto generated based on transition variables
-
+// Shorthnd
 @mixin transition ($duration, $properties: null, $delay: null) {
 	transition-duration: $duration;
 
