@@ -1,10 +1,14 @@
 {
   "name": "moabit",
   "version": "0.0.1",
-  "description": "Mixins you always end up using",
+  "description": "Collection of useful Sass mixins and functions",
   "main": "index.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Eiskis/moabit.git"
   },
   "author": {
     "name": "Jerry Jäppinen",
