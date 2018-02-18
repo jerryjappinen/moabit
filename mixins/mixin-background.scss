@@ -12,9 +12,9 @@
 	background-color: color-translucent($color, $opacity);
 }
 
-@mixin background-image ($image: null) {
-	@if $image {
-		background-image: url('~assets/#{$image}');
+@mixin background-image ($path: null) {
+	@if $path {
+		background-image: url($path);
 	}
 }
 
