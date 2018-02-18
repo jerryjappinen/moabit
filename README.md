@@ -2,13 +2,17 @@
 
 Moabit is a collection of useful Sass mixins and functions.
 
-You could actually say that Moabit is about **mixins of all beneficial, interesting things**.
+You could actually say that Moabit is about **m**ixins **o**f **a**ll **b**eneficial, **i**mportant **t**hings.
 
 ## Quick start
+
+Install Moabit as a dependency:
 
 ```sh
 npm install moabit --save
 ```
+
+Import default variables, functions and mixins in your Sass files:
 
 ```scss
 // Import default variables
@@ -21,7 +25,7 @@ npm install moabit --save
 // See moabit/variables.scss
 @import './my-variables';
 
-// Resets and normalizations
+// Resets and normalizations (optional)
 // These WILL output CSS
 @import 'moabit/font-face';
 @import 'moabit/normalize';
