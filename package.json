@@ -1,0 +1,14 @@
+{
+  "name": "moabit",
+  "version": "0.0.1",
+  "description": "Mixins you always end up using",
+  "main": "index.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Jerry Jäppinen",
+    "email": "eiskis@gmail.com"
+  },
+  "license": "MIT"
+}

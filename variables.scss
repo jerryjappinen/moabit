@@ -1,0 +1,234 @@
+// @import './functions' !default;
+
+// Brands
+$color-airbnb: #fd5c63 !default;
+$color-android: #a4c639 !default;
+$color-behance: #005cff !default;
+$color-behance-dark: #004ed9 !default;
+$color-facebook: #4267b2 !default;
+$color-googleplay: #689f38 !default;
+$color-instagram: #3f729b !default;
+$color-instapaper: #428bca !default;
+$color-ios: #007aff !default;
+$color-medium: #02b875 !default;
+$color-messenger: #007aff !default;
+$color-pinterest: #bd081c !default;
+$color-twitter: #55acee !default;
+$color-whatsapp: #25d366 !default;
+$color-vue: #4fc08d !default;
+$color-vue-dark: #35495d !default;
+
+// Color values
+$color-transparent: transparent !default;
+$color-black: #000 !default;
+$color-white: #fff !default;
+
+$color-very-very-light-grey: #f6f6f6 !default;
+$color-very-light-grey: #ececec !default;
+$color-light-grey: #dddddd !default;
+$color-grey: #b6b6b6 !default;
+$color-dark: #303030 !default;
+$color-very-dark: #101010 !default;
+
+$color-red: #F44336 !default;
+$color-dark-red: #B71C1C !default;
+
+$color-pink: #E91E63 !default;
+$color-dark-pink: #880E4F !default;
+
+$color-orange: #FF9800 !default;
+$color-dark-orange: #E65100 !default;
+
+$color-yellow: #FFEB3B !default;
+$color-dark-yellow: #F9A825 !default;
+
+$color-green: #4CAF50 !default;
+$color-dark-green: #1B5E20 !default;
+
+$color-purple: #9C27B0 !default;
+$color-dark-purple: #4A148C !default;
+
+$color-blue: #2196F3 !default;
+$color-dark-blue: #0D47A1 !default;
+
+
+
+// Typography
+$font-sans: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue",sans-serif;
+$font-serif: 'Droid Serif', 'Georgia', serif !default;
+$font-mono: 'Roboto Mono', 'Monaco', 'Menlo', 'Segoe UI Mono', 'Consolas', courier, monospace !default;
+$font-display: null !default;
+
+$font-size-small: 0.75em !default;
+$font-size-large: 1.25em !default;
+
+$font-size-display: $font-size-large !default;
+$font-size-uppercase: 0.875em !default;
+$font-size-mono: $font-size-small !default;
+
+$font-weight-bold: 700 !default;
+
+// Line heights
+// NOTE: keep these unitless
+$line-height-tight: 1.5 !default;
+$line-height: 1.8 !default;
+$line-height-loose: 2 !default;
+$line-height-print: 1.5 !default;
+
+// Local web fonts to generate a font-face definitions based on
+//
+// NOTE:
+// - remember to use trailing commas with Sass nested lists to avoid gotchas
+// - Files should be under `~@fonts/` (without the file extensions)
+// - See `font-face.scss` and `mixin-font-face.scss`
+// $local-web-fonts: (
+// 	(
+// 		font-family: 'Source Sans Pro',
+// 		font-weight: 400,
+// 		font-style: normal,
+// 		path: 'source-sans/sourcesanspro-regular-webfont',
+// 	),
+// 	(
+// 		font-family: 'Source Sans Pro',
+// 		font-weight: 400,
+// 		font-style: italic,
+// 		path: 'source-sans/sourcesanspro-italic-webfont',
+// 	),
+// 	(
+// 		font-family: 'Source Sans Pro',
+// 		font-weight: 700,
+// 		font-style: normal,
+// 		path: 'source-sans/sourcesanspro-bold-webfont',
+// 	),
+// 	(
+// 		font-family: 'Source Sans Pro',
+// 		font-weight: 700,
+// 		font-style: italic,
+// 		path: 'source-sans/sourcesanspro-bolditalic-webfont',
+// 	),
+// );
+
+
+
+// Radiuses
+$radius-tight: 2px !default;
+$radius: 4px !default;
+$radius-loose: 6px !default;
+
+
+
+// Rhythm
+
+$rhythm-tight-half: 0.4em !default;
+$rhythm-tight: 0.8em !default;
+$rhythm-base: 1.6em !default;
+$rhythm-loose: 3.2em !default;
+
+$separate-hairline: 1px !default;
+$separate-thick: 0.25em !default;
+
+$pad-tight-vertical: 2px !default;
+$pad-tight-horizontal: 6px !default;
+$pad-vertical: 8px !default;
+$pad-horizontal: 12px !default;
+$pad-loose-vertical: 14px !default;
+$pad-loose-horizontal: 18px !default;
+
+$buffer-very-tight: 0.4rem; // em
+$buffer-tight: $buffer-very-tight * 2; 	// 0.8em
+$buffer: $buffer-tight * 2; 			// 1.6em
+$buffer-loose: $buffer * 2; 			// 3.2em
+
+$buffer-relative-tight: 2% !default;
+$buffer-relative: 6% !default;
+
+
+
+// Transition durations
+$transition-very-very-fast: 25ms !default;
+$transition-very-fast: 75ms !default;
+$transition-fast: 150ms !default;
+$transition-medium: 250ms !default;
+$transition-slow: 450ms !default;
+$transition-slowish: 600ms !default;
+$transition-very-slow: 900ms !default;
+$transition-very-very-slow: 1200ms !default;
+
+// Transition property sets
+$transition-properties-style: opacity, color, background-color, border-color, box-shadow, text-shadow !default;
+$transition-properties-common: transform, $transition-properties-style !default;
+$transition-properties-transform: transform, width, height !default;
+$transition-properties-position: transform, top, bottom, left, right !default;
+
+// Easing functions
+$easing-none: linear !default;
+$easing-ease: ease !default;
+$easing-snap: cubic-bezier(0, 0.5, 0.5, 1) !default;
+$easing-bounce: cubic-bezier(0, 0.5, 0.5, 1.05) !default;
+$easing-smooth: cubic-bezier(0.19, 1, 0.22, 1) !default;
+
+
+
+// Pixel ratios
+$hdpi: 140dpi; // What to regard as limit for high pixel density (retina)
+
+
+
+// Content-oriented defined paragraph widths
+$width-content-very-tight: 8em !default;
+$width-content-tight: 18em !default;
+$width-content: 30em !default;
+$width-content-loose: 42em !default;
+$width-content-very-loose: 64em !default;
+
+// Defined screen widths in portrait
+$width-iphone-4: 320px !default;
+$width-iphone-5: $width-iphone-4 !default;
+$width-iphone-6: 375px !default;
+$width-iphone-6-plus: 414px !default;
+$width-ipad: 768px !default;
+$width-ipad-pro: 1024px !default;
+
+// Defined screen widths in portrait
+$height-iphone-4: 480px !default;
+$height-iphone-5: 568px !default;
+$height-iphone-6: 667px !default;
+$height-iphone-6-plus: 736px !default;
+$height-ipad: 1024px !default;
+$height-ipad-pro: 1366px !default;
+
+
+
+// Breakpoints
+// See `mixin-viewport.scss`
+// NOTE: defining breakpoints in px gives more predictable control on devices, and avoids any issues when em is scaled
+$breakpoint-tiny: $width-iphone-6-plus !default;
+$breakpoint-small: $height-iphone-6 !default;
+$breakpoint-medium: 1024px !default;
+$breakpoint-large: 1280px !default;
+$breakpoint-very-large: 1440px !default;
+$breakpoint-full: 1980px !default;
+
+
+
+// Defaults
+$default-perspective: 600px !default;
+
+$default-font: $font-sans !default;
+$default-font-size: 16px !default;
+$default-line-height: $line-height !default;
+
+$default-color-background: $color-white !default;
+$default-color-discreet: $color-grey !default;
+$default-color-text: $color-dark !default;
+$default-color-link: $color-blue !default;
+$default-color-link-active: $color-dark-blue !default;
+$default-color-border: $color-light-grey !default;
+
+$default-transition-duration: $transition-fast !default;
+
+// NOTE: don't touch this unles syou know what you're doing
+$default-transition-easing: null !default;
+
+$default-shadow-opacity: 0.15 !default;
+$default-shadow-color: $color-dark !default;

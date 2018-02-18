@@ -1,0 +1,4 @@
+@mixin dimensions-landscape ($width) {
+	width: $width;
+	height: 0.625 * $width;
+}

@@ -1,0 +1,59 @@
+@mixin shadow ($opacity: $default-shadow-opacity, $color: $default-shadow-color) {
+	box-shadow: 0 2px 8px rgba($color, $opacity);
+}
+
+@mixin shadow-transparent ($color: $default-shadow-color) {
+	@include shadow(0, $color);
+}
+
+
+
+@mixin shadow-solid ($width: 1px, $color: $default-shadow-color, $opacity: 1) {
+	box-shadow: 0 0 0 $width rgba($color, $opacity);
+}
+
+
+
+@mixin shadow-tight ($opacity: $default-shadow-opacity, $color: $default-shadow-color) {
+	box-shadow: 0 1px 2px rgba($color, $opacity);
+}
+
+@mixin shadow-tight-transparent ($color: $default-shadow-color) {
+	@include shadow-tight(0, $color);
+}
+
+
+
+@mixin shadow-loose ($opacity: $default-shadow-opacity, $color: $default-shadow-color) {
+	box-shadow: 0 2px 38px rgba($color, $opacity);
+}
+
+@mixin shadow-loose-transparent ($color: $default-shadow-color) {
+	@include shadow-loose(0, $color);
+}
+
+
+
+@mixin no-shadow ($color: $default-shadow-color) {
+	@include shadow-transparent(transparent);
+}
+
+
+
+// Hover effects
+
+@mixin hover-shadow ($color: $color-blue, $opacity: 0.25) {
+	box-shadow: 0 0 0 5px color-translucent($color, $opacity);
+}
+
+@mixin hover-shadow-tight ($color: $color-blue, $opacity: 0.25) {
+	box-shadow: 0 0 0 3px color-translucent($color, $opacity);
+}
+
+@mixin hover-shadow-rest ($color: $color-blue) {
+	box-shadow: 0 0 0 0 color-translucent($color, 0);
+}
+
+@mixin hover-shadow-tight-rest ($color: $color-blue) {
+	box-shadow: 0 0 0 0 color-translucent($color, 0);
+}
