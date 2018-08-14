@@ -11,3 +11,4 @@
 - Push, buffer and pad with arguments
 - `dimensions` for custom ratios
 - Add title rhythm basics
+- Add `$count` arguments to push/buffer/pad mixins
