@@ -1,0 +1,54 @@
+// Percentage-based buffers
+
+@mixin push-relative {
+	@include push-relative-horizontal;
+	@include push-relative-vertical;
+}
+
+@mixin push-relative-even {
+	@include push-relative-horizontal;
+	@include push-relative-vertical-even;
+}
+
+
+
+// Pane
+
+@mixin push-relative-horizontal {
+	@include push-relative-left;
+	@include push-relative-right;
+}
+
+@mixin push-relative-vertical {
+	@include push-relative-top;
+	@include push-relative-bottom;
+}
+
+@mixin push-relative-vertical-even {
+	@include push-relative-top-even;
+	@include push-relative-bottom;
+}
+
+
+
+// Single
+
+@mixin push-relative-top {
+	margin-top: $buffer-relative-tight;
+}
+
+@mixin push-relative-top-even {
+	margin-top: $buffer-relative;
+}
+
+@mixin push-relative-right {
+	margin-right: $buffer-relative;
+}
+
+@mixin push-relative-bottom {
+	margin-bottom: $buffer-relative;
+}
+
+@mixin push-relative-left {
+	margin-left: $buffer-relative;
+}
