@@ -37,23 +37,3 @@
 @mixin no-shadow ($color: $default-shadow-color) {
 	@include shadow-transparent(transparent);
 }
-
-
-
-// Hover effects
-
-@mixin hover-shadow ($color: $color-blue, $opacity: 0.25) {
-	box-shadow: 0 0 0 5px color-translucent($color, $opacity);
-}
-
-@mixin hover-shadow-tight ($color: $color-blue, $opacity: 0.25) {
-	box-shadow: 0 0 0 3px color-translucent($color, $opacity);
-}
-
-@mixin hover-shadow-rest ($color: $color-blue) {
-	box-shadow: 0 0 0 0 color-translucent($color, 0);
-}
-
-@mixin hover-shadow-tight-rest ($color: $color-blue) {
-	box-shadow: 0 0 0 0 color-translucent($color, 0);
-}

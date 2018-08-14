@@ -1,0 +1,52 @@
+// Default buffers
+
+@mixin buffer {
+	padding: $buffer-tight $buffer $buffer $buffer;
+}
+
+@mixin buffer-even {
+	padding: $buffer;
+}
+
+
+
+// Pane
+
+@mixin buffer-horizontal {
+	padding-left: $buffer;
+	padding-right: $buffer;
+}
+
+@mixin buffer-vertical {
+	padding-top: $buffer-tight;
+	padding-bottom: $buffer;
+}
+
+@mixin buffer-vertical-even {
+	padding-top: $buffer;
+	padding-bottom: $buffer;
+}
+
+
+
+// Single
+
+@mixin buffer-top {
+	padding-top: $buffer-tight;
+}
+
+@mixin buffer-top-even {
+	padding-top: $buffer;
+}
+
+@mixin buffer-right {
+	padding-right: $buffer;
+}
+
+@mixin buffer-bottom {
+	padding-bottom: $buffer;
+}
+
+@mixin buffer-left {
+	padding-left: $buffer;
+}

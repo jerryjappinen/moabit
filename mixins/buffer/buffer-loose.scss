@@ -1,0 +1,52 @@
+// Double buffers
+
+@mixin buffer-loose {
+	padding: $buffer $buffer-loose $buffer-loose $buffer-loose;
+}
+
+@mixin buffer-loose-even {
+	padding: $buffer-loose;
+}
+
+
+
+// Pane
+
+@mixin buffer-loose-horizontal {
+	padding-left: $buffer-loose;
+	padding-right: $buffer-loose;
+}
+
+@mixin buffer-loose-vertical {
+	padding-top: $buffer;
+	padding-bottom: $buffer-loose;
+}
+
+@mixin buffer-loose-vertical-even {
+	padding-top: $buffer-loose;
+	padding-bottom: $buffer-loose;
+}
+
+
+
+// Single
+
+@mixin buffer-loose-top {
+	padding-top: $buffer;
+}
+
+@mixin buffer-loose-top-even {
+	padding-top: $buffer-loose;
+}
+
+@mixin buffer-loose-right {
+	padding-right: $buffer-loose;
+}
+
+@mixin buffer-loose-bottom {
+	padding-bottom: $buffer-loose;
+}
+
+@mixin buffer-loose-left {
+	padding-left: $buffer-loose;
+}
