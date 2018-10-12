@@ -154,7 +154,7 @@ $transition-very-slow: 900ms !default;
 $transition-very-very-slow: 1200ms !default;
 
 // Transition property sets
-$transition-properties-style: opacity, color, background-color, border-color, box-shadow, text-shadow !default;
+$transition-properties-style: opacity, color, background-color, border-color, box-shadow, text-shadow, text-decoration-color !default;
 $transition-properties-common: transform, $transition-properties-style !default;
 $transition-properties-transform: transform, width, height !default;
 $transition-properties-position: transform, top, bottom, left, right !default;
