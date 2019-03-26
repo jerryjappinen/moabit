@@ -150,11 +150,16 @@ iframe,
 canvas,
 svg,
 img,
+video,
 button,
 input,
 select,
 textarea {
 	max-width: 100%;
+}
+
+video {
+	max-height: 100%;
 }
 
 iframe {
