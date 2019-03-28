@@ -20,6 +20,22 @@
 
 
 
+// Dark/light
+
+@mixin viewport-dark {
+	@media screen and (prefers-color-scheme: dark) {
+		@content;
+	}
+}
+
+@mixin viewport-light {
+	@media screen and (prefers-color-scheme: light) {
+		@content;
+	}
+}
+
+
+
 // Orientation
 
 @mixin viewport-portrait {
