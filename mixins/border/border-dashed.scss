@@ -1,0 +1,24 @@
+@mixin border-dashed {
+  border-width: $border-dashed;
+  border-style: dashed;
+}
+
+@mixin border-dashed-top {
+  border-top-width: $border-dashed;
+  border-top-style: dashed;
+}
+
+@mixin border-dashed-bottom {
+  border-bottom-width: $border-dashed;
+  border-top-style: dashed;
+}
+
+@mixin border-dashed-left {
+  border-left-width: $border-dashed;
+  border-top-style: dashed;
+}
+
+@mixin border-dashed-right {
+  border-right-width: $border-dashed;
+  border-top-style: dashed;
+}
