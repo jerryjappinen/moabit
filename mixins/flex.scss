@@ -5,17 +5,14 @@
 }
 
 @mixin flex-wrap {
-  @include flex;
   flex-wrap: wrap;
 }
 
 @mixin flex-center {
-  @include flex;
   align-items: center;
 }
 
 @mixin flex-vertical {
-  @include flex;
   flex-direction: column;
 }
 
