@@ -1,13 +1,13 @@
 // Small margins
 
 @mixin push-tight {
-	@include push-tight-horizontal;
-	@include push-tight-vertical;
+  @include push-tight-horizontal;
+  @include push-tight-vertical;
 }
 
 @mixin push-tight-even {
-	@include push-tight-horizontal;
-	@include push-tight-vertical-even;
+  @include push-tight-horizontal;
+  @include push-tight-vertical-even;
 }
 
 
@@ -15,18 +15,18 @@
 // Pane
 
 @mixin push-tight-horizontal {
-	@include push-tight-left;
-	@include push-tight-right;
+  @include push-tight-left;
+  @include push-tight-right;
 }
 
 @mixin push-tight-vertical {
-	@include push-tight-top;
-	@include push-tight-bottom;
+  @include push-tight-top;
+  @include push-tight-bottom;
 }
 
 @mixin push-tight-vertical-even {
-	@include push-tight-top-even;
-	@include push-tight-bottom;
+  @include push-tight-top-even;
+  @include push-tight-bottom;
 }
 
 
@@ -34,21 +34,21 @@
 // Single
 
 @mixin push-tight-top {
-	margin-top: $buffer-very-tight;
+  margin-top: $buffer-very-tight;
 }
 
 @mixin push-tight-top-even {
-	margin-top: $buffer-tight;
+  margin-top: $buffer-tight;
 }
 
 @mixin push-tight-right {
-	margin-right: $buffer-tight;
+  margin-right: $buffer-tight;
 }
 
 @mixin push-tight-bottom {
-	margin-bottom: $buffer-tight;
+  margin-bottom: $buffer-tight;
 }
 
 @mixin push-tight-left {
-	margin-left: $buffer-tight;
+  margin-left: $buffer-tight;
 }

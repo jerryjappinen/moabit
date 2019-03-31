@@ -2,36 +2,36 @@
 // But sometimes we want to use $pad
 
 @mixin push-pad ($count: 1) {
-	@include push-pad-vertical($count);
-	@include push-pad-horizontal($count);
+  @include push-pad-vertical($count);
+  @include push-pad-horizontal($count);
 }
 
 @mixin push-pad-vertical ($count: 1) {
-	@include push-pad-top($count);
-	@include push-pad-bottom($count);
+  @include push-pad-top($count);
+  @include push-pad-bottom($count);
 }
 
 @mixin push-pad-horizontal ($count: 1) {
-	@include push-pad-left($count);
-	@include push-pad-right($count);
+  @include push-pad-left($count);
+  @include push-pad-right($count);
 }
 
 
 
 @mixin push-pad-top ($count: 1) {
-	margin-top: $count * $pad-vertical;
+  margin-top: $count * $pad-vertical;
 }
 
 @mixin push-pad-bottom ($count: 1) {
-	margin-bottom: $count * $pad-vertical;
+  margin-bottom: $count * $pad-vertical;
 }
 
 @mixin push-pad-left ($count: 1) {
-	margin-left: $count * $pad-horizontal;
+  margin-left: $count * $pad-horizontal;
 }
 
 @mixin push-pad-right ($count: 1) {
-	margin-right: $count * $pad-horizontal;
+  margin-right: $count * $pad-horizontal;
 }
 
 
@@ -39,27 +39,27 @@
 // Flip horizontal/vertical
 
 @mixin push-pad-vertical-even ($count: 1) {
-	@include push-pad-top-even($count);
-	@include push-pad-bottom-even($count);
+  @include push-pad-top-even($count);
+  @include push-pad-bottom-even($count);
 }
 
 @mixin push-pad-horizontal-even ($count: 1) {
-	@include push-pad-left-even($count);
-	@include push-pad-right-even($count);
+  @include push-pad-left-even($count);
+  @include push-pad-right-even($count);
 }
 
 @mixin push-pad-top-even ($count: 1) {
-	margin-top: $count * $pad-horizontal;
+  margin-top: $count * $pad-horizontal;
 }
 
 @mixin push-pad-bottom-even ($count: 1) {
-	margin-bottom: $count * $pad-horizontal;
+  margin-bottom: $count * $pad-horizontal;
 }
 
 @mixin push-pad-left-even ($count: 1) {
-	margin-left: $count * $pad-vertical;
+  margin-left: $count * $pad-vertical;
 }
 
 @mixin push-pad-right-even ($count: 1) {
-	margin-right: $count * $pad-vertical;
+  margin-right: $count * $pad-vertical;
 }

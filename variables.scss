@@ -81,30 +81,30 @@ $line-height-print: 1.5 !default;
 // - remember to use trailing commas with Sass nested lists to avoid gotchas
 // - See `font-face.scss` and `mixin-font-face.scss`
 // $local-web-fonts: (
-// 	(
-// 		font-family: 'Source Sans Pro',
-// 		font-weight: 400,
-// 		font-style: normal,
-// 		path: 'source-sans/sourcesanspro-regular-webfont',
-// 	),
-// 	(
-// 		font-family: 'Source Sans Pro',
-// 		font-weight: 400,
-// 		font-style: italic,
-// 		path: 'source-sans/sourcesanspro-italic-webfont',
-// 	),
-// 	(
-// 		font-family: 'Source Sans Pro',
-// 		font-weight: 700,
-// 		font-style: normal,
-// 		path: 'source-sans/sourcesanspro-bold-webfont',
-// 	),
-// 	(
-// 		font-family: 'Source Sans Pro',
-// 		font-weight: 700,
-// 		font-style: italic,
-// 		path: 'source-sans/sourcesanspro-bolditalic-webfont',
-// 	),
+//   (
+//     font-family: 'Source Sans Pro',
+//     font-weight: 400,
+//     font-style: normal,
+//     path: 'source-sans/sourcesanspro-regular-webfont',
+//   ),
+//   (
+//     font-family: 'Source Sans Pro',
+//     font-weight: 400,
+//     font-style: italic,
+//     path: 'source-sans/sourcesanspro-italic-webfont',
+//   ),
+//   (
+//     font-family: 'Source Sans Pro',
+//     font-weight: 700,
+//     font-style: normal,
+//     path: 'source-sans/sourcesanspro-bold-webfont',
+//   ),
+//   (
+//     font-family: 'Source Sans Pro',
+//     font-weight: 700,
+//     font-style: italic,
+//     path: 'source-sans/sourcesanspro-bolditalic-webfont',
+//   ),
 // );
 
 
@@ -135,9 +135,9 @@ $pad-loose-vertical: 14px !default;
 $pad-loose-horizontal: 18px !default;
 
 $buffer-very-tight: 0.4rem; // em
-$buffer-tight: $buffer-very-tight * 2; 	// 0.8em
-$buffer: $buffer-tight * 2; 			// 1.6em
-$buffer-loose: $buffer * 2; 			// 3.2em
+$buffer-tight: $buffer-very-tight * 2;   // 0.8em
+$buffer: $buffer-tight * 2;       // 1.6em
+$buffer-loose: $buffer * 2;       // 3.2em
 
 $buffer-relative-tight: 2% !default;
 $buffer-relative: 6% !default;

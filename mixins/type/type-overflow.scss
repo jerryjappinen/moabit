@@ -1,23 +1,23 @@
 @mixin type-hyphens {
-	// word-break: break-word;
-	hyphens: auto;
+  // word-break: break-word;
+  hyphens: auto;
 }
 
 @mixin type-nohyphens {
-	// word-break: normal;
-	hyphens: manual;
+  // word-break: normal;
+  hyphens: manual;
 }
 
 @mixin type-nobreak {
-	word-break: keep-all;
-	white-space: nowrap;
+  word-break: keep-all;
+  white-space: nowrap;
 }
 
 @mixin type-ellipsis {
-	text-overflow: ellipsis;
-	overflow: hidden;
-	white-space: nowrap;
-	// vertical-align: middle;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  // vertical-align: middle;
 }
 
 @mixin type-max-lines ($count) {

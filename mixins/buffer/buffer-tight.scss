@@ -1,11 +1,11 @@
 // Small buffers
 
 @mixin buffer-tight {
-	padding: $buffer-very-tight $buffer-tight $buffer-tight $buffer-tight;
+  padding: $buffer-very-tight $buffer-tight $buffer-tight $buffer-tight;
 }
 
 @mixin buffer-tight-even {
-	padding: $buffer-tight;
+  padding: $buffer-tight;
 }
 
 
@@ -13,18 +13,18 @@
 // Pane
 
 @mixin buffer-tight-horizontal {
-	padding-left: $buffer-tight;
-	padding-right: $buffer-tight;
+  padding-left: $buffer-tight;
+  padding-right: $buffer-tight;
 }
 
 @mixin buffer-tight-vertical {
-	padding-top: $buffer-very-tight;
-	padding-bottom: $buffer-tight;
+  padding-top: $buffer-very-tight;
+  padding-bottom: $buffer-tight;
 }
 
 @mixin buffer-tight-vertical-even {
-	padding-top: $buffer-tight;
-	padding-bottom: $buffer-tight;
+  padding-top: $buffer-tight;
+  padding-bottom: $buffer-tight;
 }
 
 
@@ -32,21 +32,21 @@
 // Single
 
 @mixin buffer-tight-top {
-	padding-top: $buffer-very-tight;
+  padding-top: $buffer-very-tight;
 }
 
 @mixin buffer-tight-top-even {
-	padding-top: $buffer-tight;
+  padding-top: $buffer-tight;
 }
 
 @mixin buffer-tight-right {
-	padding-right: $buffer-tight;
+  padding-right: $buffer-tight;
 }
 
 @mixin buffer-tight-bottom {
-	padding-bottom: $buffer-tight;
+  padding-bottom: $buffer-tight;
 }
 
 @mixin buffer-tight-left {
-	padding-left: $buffer-tight;
+  padding-left: $buffer-tight;
 }

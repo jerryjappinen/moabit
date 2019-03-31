@@ -1,13 +1,13 @@
 // Double margins
 
 @mixin push-loose {
-	@include push-loose-horizontal;
-	@include push-loose-vertical;
+  @include push-loose-horizontal;
+  @include push-loose-vertical;
 }
 
 @mixin push-loose-even {
-	@include push-loose-horizontal;
-	@include push-loose-vertical-even;
+  @include push-loose-horizontal;
+  @include push-loose-vertical-even;
 }
 
 
@@ -15,18 +15,18 @@
 // Pane
 
 @mixin push-loose-horizontal {
-	@include push-loose-left;
-	@include push-loose-right;
+  @include push-loose-left;
+  @include push-loose-right;
 }
 
 @mixin push-loose-vertical {
-	@include push-loose-top;
-	@include push-loose-bottom;
+  @include push-loose-top;
+  @include push-loose-bottom;
 }
 
 @mixin push-loose-vertical-even {
-	@include push-loose-top-even;
-	@include push-loose-bottom;
+  @include push-loose-top-even;
+  @include push-loose-bottom;
 }
 
 
@@ -34,21 +34,21 @@
 // Single
 
 @mixin push-loose-top {
-	margin-top: $buffer;
+  margin-top: $buffer;
 }
 
 @mixin push-loose-top-even {
-	margin-top: $buffer-loose;
+  margin-top: $buffer-loose;
 }
 
 @mixin push-loose-right {
-	margin-right: $buffer-loose;
+  margin-right: $buffer-loose;
 }
 
 @mixin push-loose-bottom {
-	margin-bottom: $buffer-loose;
+  margin-bottom: $buffer-loose;
 }
 
 @mixin push-loose-left {
-	margin-left: $buffer-loose;
+  margin-left: $buffer-loose;
 }

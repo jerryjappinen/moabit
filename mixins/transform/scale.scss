@@ -1,15 +1,15 @@
 @mixin scale ($scale, $properties...) {
-	@include transform(scale($scale), $properties...);
+  @include transform(scale($scale), $properties...);
 }
 
 @mixin scale-normal ($properties...) {
-	@include scale(1, $properties...);
+  @include scale(1, $properties...);
 }
 
 @mixin no-scale ($properties...) {
-	@include scale(1, $properties...);
+  @include scale(1, $properties...);
 }
 
 @mixin scale-zero ($properties...) {
-	@include scale(0, $properties...);
+  @include scale(0, $properties...);
 }

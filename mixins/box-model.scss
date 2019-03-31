@@ -1,15 +1,15 @@
 // Box sizing
 
 @mixin box-sizing ($value) {
-	box-sizing: $value;
+  box-sizing: $value;
 }
 
 @mixin content-box {
-	@include box-sizing(content-box);
+  @include box-sizing(content-box);
 }
 
 @mixin border-box {
-	@include box-sizing(border-box);
+  @include box-sizing(border-box);
 }
 
 
@@ -17,11 +17,11 @@
 // Border-collapse
 
 @mixin border-collapse {
-	border-collapse: collapse;
+  border-collapse: collapse;
 }
 
 @mixin no-border-collapse {
-	border-collapse: separate;
+  border-collapse: separate;
 }
 
 
@@ -29,21 +29,21 @@
 // Background-clip
 
 @mixin background-clip ($value) {
-	background-clip: $value;
+  background-clip: $value;
 }
 
 @mixin background-clip-content-box {
-	@include background-clip(content-box);
+  @include background-clip(content-box);
 }
 
 @mixin background-clip-border-box {
-	@include background-clip(border-box);
+  @include background-clip(border-box);
 }
 
 @mixin background-clip-padding-box {
-	@include background-clip(padding-box);
+  @include background-clip(padding-box);
 }
 
 @mixin background-clip-text {
-	@include background-clip(text);
+  @include background-clip(text);
 }

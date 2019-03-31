@@ -2,35 +2,35 @@
 // stylelint-disable value-no-vendor-prefix
 // stylelint-disable declaration-block-no-duplicate-properties
 @mixin cursor-grab {
-	cursor: -webkit-grab;
-	cursor: -moz-grab;
-	cursor: grab;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: grab;
 }
 
 @mixin cursor-grabbing {
-	cursor: -webkit-grabbing;
-	cursor: -moz-grab;
-	cursor: grabbing;
+  cursor: -webkit-grabbing;
+  cursor: -moz-grab;
+  cursor: grabbing;
 }
 // stylelint-enable value-no-vendor-prefix
 // stylelint-enable declaration-block-no-duplicate-properties
 
 @mixin cursor-pointer {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 @mixin cursor-help {
-	cursor: help;
+  cursor: help;
 }
 
 @mixin cursor-text {
-	cursor: text;
+  cursor: text;
 }
 
 @mixin cursor-default {
-	cursor: default;
+  cursor: default;
 }
 
 @mixin cursor-inherit {
-	cursor: inherit;
+  cursor: inherit;
 }

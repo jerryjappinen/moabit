@@ -1,15 +1,15 @@
 @mixin static {
-	position: static;
+  position: static;
 }
 
 @mixin relative {
-	position: relative;
+  position: relative;
 }
 
 @mixin absolute {
-	position: absolute;
+  position: absolute;
 }
 
 @mixin fixed {
-	position: fixed;
+  position: fixed;
 }

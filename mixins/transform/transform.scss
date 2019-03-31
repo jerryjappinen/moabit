@@ -1,8 +1,8 @@
 // Allow passing multiple lists of properties to transform
 @mixin transform ($properties...) {
-	transform: $properties;
+  transform: $properties;
 }
 
 @mixin no-transform {
-	transform: none;
+  transform: none;
 }

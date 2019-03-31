@@ -1,23 +1,23 @@
 // https://css-tricks.com/styling-underlines-web/
 // https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration
 @mixin text-decoration ($line) {
-	text-decoration-line: $line;
+  text-decoration-line: $line;
 }
 
 @mixin text-decoration-style ($style) {
-	text-decoration-style: $style;
+  text-decoration-style: $style;
 }
 
 @mixin text-decoration-color ($color) {
-	text-decoration-color: $color;
+  text-decoration-color: $color;
 }
 
 @mixin no-text-decoration {
-	@include text-decoration(none);
+  @include text-decoration(none);
 }
 
 @mixin no-text-decoration-color {
-	@include text-decoration-color(transparent);
+  @include text-decoration-color(transparent);
 }
 
 
@@ -25,13 +25,13 @@
 // Treating underline as alias for text decoration, since it's so common
 
 @mixin underline ($color) {
-	@include text-decoration(underline);
+  @include text-decoration(underline);
 }
 
 @mixin underline-color ($color) {
-	@include text-decoration-color($color);
+  @include text-decoration-color($color);
 }
 
 @mixin no-underline-color {
-	@include no-decoration-color;
+  @include no-decoration-color;
 }
