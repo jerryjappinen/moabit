@@ -1,27 +1,2 @@
-@mixin overflow {
-	overflow-x: visible;
-	overflow-y: visible;
-}
-
-@mixin overflow-vertical {
-	overflow-x: hidden;
-	overflow-y: auto;
-}
-
-@mixin overflow-horizontal {
-	overflow-x: auto;
-	overflow-y: hidden;
-}
-
-@mixin no-overflow-x {
-	overflow-x: hidden;
-}
-
-@mixin no-overflow-y {
-	overflow-x: hidden;
-}
-
-@mixin no-overflow {
-	overflow: hidden;
-	-webkit-overflow-scrolling: auto;
-}
+@import './overflow/no-overflow';
+@import './overflow/overflow';

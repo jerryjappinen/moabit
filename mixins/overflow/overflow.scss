@@ -1,0 +1,14 @@
+@mixin overflow {
+	overflow-x: visible;
+	overflow-y: visible;
+}
+
+@mixin horizontal-overflow {
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+@mixin vertical-overflow {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
