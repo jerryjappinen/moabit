@@ -2,6 +2,6 @@
   @include transform(rotate($amount), $properties...);
 }
 
-@mixin no-rotation ($properties...) {
+@mixin no-rotate ($properties...) {
   @include rotate(0deg, $properties...);
 }

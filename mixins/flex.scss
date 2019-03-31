@@ -25,28 +25,28 @@
 
 // Flex items
 
-@mixin flex-item-shrink {
+@mixin flex-shrink {
   flex-shrink: 1;
 }
 
-@mixin flex-item-grow {
+@mixin flex-grow {
   flex-grow: 1;
 }
 
-@mixin flex-item-no-shrink {
+@mixin flex-no-shrink {
   flex-shrink: 0;
 }
 
-@mixin flex-item-no-grow {
+@mixin flex-no-grow {
   flex-grow: 0;
 }
 
-@mixin flex-item-fluid {
-  @include flex-item-grow;
-  @include flex-item-shrink;
+@mixin flex-fluid {
+  @include flex-grow;
+  @include flex-shrink;
 }
 
-@mixin flex-item-fixed {
-  @include flex-item-no-grow;
-  @include flex-item-no-shrink;
+@mixin flex-fixed {
+  @include flex-no-grow;
+  @include flex-no-shrink;
 }

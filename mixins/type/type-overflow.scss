@@ -1,26 +1,26 @@
-@mixin type-hyphens {
+@mixin hyphens {
   // word-break: break-word;
   hyphens: auto;
 }
 
-@mixin type-nohyphens {
+@mixin no-hyphens {
   // word-break: normal;
   hyphens: manual;
 }
 
-@mixin type-nobreak {
+@mixin no-break {
   word-break: keep-all;
   white-space: nowrap;
 }
 
-@mixin type-ellipsis {
+@mixin ellipsis {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
   // vertical-align: middle;
 }
 
-@mixin type-max-lines ($count) {
+@mixin max-lines ($count) {
   @if $count {
     overflow: hidden;
     display: -webkit-box;

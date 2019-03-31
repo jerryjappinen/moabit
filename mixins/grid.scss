@@ -11,13 +11,7 @@
   grid-template-columns: repeat($column-count, 1fr);
 }
 
-@mixin grid-column-gap ($column-gap) {
-  grid-column-gap: $column-gap;
-}
 
-@mixin grid-row-gap ($row-gap) {
-  grid-row-gap: $row-gap;
-}
 
 @mixin grid-gap ($column-gap: 0, $row-gap: null) {
   @include grid-column-gap($column-gap);
@@ -27,6 +21,16 @@
   }
 
 }
+
+@mixin grid-column-gap ($column-gap) {
+  grid-column-gap: $column-gap;
+}
+
+@mixin grid-row-gap ($row-gap) {
+  grid-row-gap: $row-gap;
+}
+
+
 
 // Hack to enforce square cells
 // https://css-tricks.com/aspect-ratios-grid-items/

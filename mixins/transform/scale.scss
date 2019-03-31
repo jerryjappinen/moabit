@@ -2,7 +2,7 @@
   @include transform(scale($scale), $properties...);
 }
 
-@mixin scale-normal ($properties...) {
+@mixin default-scale ($properties...) {
   @include scale(1, $properties...);
 }
 
@@ -10,6 +10,6 @@
   @include scale(1, $properties...);
 }
 
-@mixin scale-zero ($properties...) {
+@mixin zero-scale ($properties...) {
   @include scale(0, $properties...);
 }

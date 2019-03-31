@@ -10,17 +10,10 @@
   );
 }
 
-@mixin gradient-dark ($direction: 0deg, $hue: 205, $saturation: 12%, $luminance: 26%) {
-  background-image: linear-gradient($direction, hsla($hue, $saturation, $luminance, 0),
-    hsla($hue, $saturation, $luminance, 0.06) 80%,
-    hsla($hue, $saturation, $luminance, 0.12));
+@mixin gradient-dark ($direction: 0deg, $opacity1: 0, $opacity2: 1) {
+  @include gradient($direction, color-translucent($color-dark, $opacity1), color-translucent($color-dark, $opacity2))
 }
 
-@mixin gradient-white ($direction: 0deg, $max: 1) {
-  background-image: linear-gradient(
-    $direction,
-    rgba($color-white, 0),
-    rgba($color-white, ($max/2)) 50%,
-    rgba($color-white, $max)
-  );
+@mixin gradient-white ($direction: 0deg, $opacity1: 0, $opacity2: 1) {
+  @include gradient($direction, color-translucent($color-white, $opacity1), color-translucent($color-white, $opacity2))
 }
