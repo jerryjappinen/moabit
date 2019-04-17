@@ -1,6 +1,6 @@
 {
   "name": "moabit",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "Collection of useful Sass mixins and functions",
   "main": "index.scss",
   "scripts": {
