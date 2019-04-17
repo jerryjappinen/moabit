@@ -35,7 +35,7 @@
 // Hack to enforce square cells
 // https://css-tricks.com/aspect-ratios-grid-items/
 @mixin square-grid-cell {
-  :before {
+  &:before {
     content: '';
     display: inline-block;
     width: 1px;
