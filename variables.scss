@@ -1,23 +1,5 @@
 // @import './functions' !default;
 
-// Brands
-$color-airbnb: #fd5c63 !default;
-$color-android: #a4c639 !default;
-$color-behance: #005cff !default;
-$color-behance-dark: #004ed9 !default;
-$color-facebook: #4267b2 !default;
-$color-googleplay: #689f38 !default;
-$color-instagram: #3f729b !default;
-$color-instapaper: #428bca !default;
-$color-ios: #007aff !default;
-$color-medium: #02b875 !default;
-$color-messenger: #007aff !default;
-$color-pinterest: #bd081c !default;
-$color-twitter: #55acee !default;
-$color-whatsapp: #25d366 !default;
-$color-vue: #4fc08d !default;
-$color-vue-dark: #35495d !default;
-
 // Color values
 $color-transparent: transparent !default;
 $color-black: #000 !default;
@@ -123,9 +105,9 @@ $rhythm-tight: 0.8em !default;
 $rhythm-base: 1.6em !default;
 $rhythm-loose: 3.2em !default;
 
-$border-hairline: 1px !default;
-$border-dashed: 2px !default;
-$border-thick: 0.25em !default;
+$hairline-border-width: 1px !default;
+$dashed-border-width: 2px !default;
+$thick-border-width: 0.25em !default;
 
 $pad-tight-vertical: 2px !default;
 $pad-tight-horizontal: 6px !default;
@@ -170,7 +152,8 @@ $easing-smooth: cubic-bezier(0.19, 1, 0.22, 1) !default;
 
 
 // Pixel ratios
-$hdpi: 140dpi; // What to regard as limit for high pixel density (retina)
+// What to regard as limit for high pixel density (retina)
+$hdpi: 140dpi;
 
 
 
@@ -209,6 +192,10 @@ $breakpoint-large: 1280px !default;
 $breakpoint-very-large: 1440px !default;
 $breakpoint-full: 1980px !default;
 
+$breakpoint-phone: $width-ipad - 1px;
+$breakpoint-tablet: $breakpoint-large - 1px;
+$breakpoint-hd: 1680px - 1px;
+
 
 
 // Defaults
@@ -218,12 +205,12 @@ $default-font: $font-sans !default;
 $default-font-size: 16px !default;
 $default-line-height: $line-height !default;
 
-$default-color-background: $color-white !default;
-$default-color-discreet: $color-grey !default;
-$default-color-text: $color-dark !default;
-$default-color-link: $color-blue !default;
-$default-color-link-active: $color-dark-blue !default;
-$default-color-border: $color-light-grey !default;
+$default-background-color: $color-white !default;
+$default-discreet-text-color: $color-grey !default;
+$default-text-color: $color-dark !default;
+$default-link-color: $color-blue !default;
+$default-link-color-active: $color-dark-blue !default;
+$default-border-color: $color-light-grey !default;
 
 $default-transition-duration: $transition-fast !default;
 

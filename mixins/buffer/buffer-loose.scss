@@ -1,11 +1,11 @@
 // Double buffers
 
-@mixin buffer-loose {
-  padding: $buffer $buffer-loose $buffer-loose $buffer-loose;
+@mixin buffer-loose ($step: 1) {
+  padding: ($step * $buffer) ($step * $buffer-loose) ($step * $buffer-loose) ($step * $buffer-loose);
 }
 
-@mixin buffer-loose-even {
-  padding: $buffer-loose;
+@mixin buffer-loose-even ($step: 1) {
+  padding: $step * $buffer-loose;
 }
 
 

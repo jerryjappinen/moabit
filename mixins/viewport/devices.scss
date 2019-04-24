@@ -1,0 +1,32 @@
+@mixin phone {
+  @include screen-under-or-at($breakpoint-phone) {
+    @content;
+  }
+}
+
+// Not phone, but anything above
+@mixin tablet {
+  @include screen-over($breakpoint-phone) {
+    @content;
+  }
+}
+
+// Small screens only
+@mixin under-desktop {
+  @include screen-under-or-at($breakpoint-tablet) {
+    @content;
+  }
+}
+
+// Over tablet breakpoint
+@mixin desktop {
+  @include screen-over($breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin hd {
+  @include screen-over($breakpoint-hd) {
+    @content;
+  }
+}

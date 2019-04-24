@@ -1,3 +1,0 @@
-@mixin animation-pulse ($count: infinite) {
-  @include animation(pulse, $transition-slow, $easing-smooth, $count, alternate);
-}
