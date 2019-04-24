@@ -46,6 +46,7 @@ del,
 dfn,
 em,
 img,
+svg,
 ins,
 kbd,
 q,
@@ -95,6 +96,7 @@ audio,
 video {
   border-width: 0;
   border-style: solid;
+  text-decoration-style: solid;
 
   outline-width: 0;
   outline-style: solid;

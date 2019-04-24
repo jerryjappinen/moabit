@@ -1,37 +1,37 @@
 // @import './functions' !default;
 
 // Color values
-$color-transparent: transparent !default;
-$color-black: #000 !default;
-$color-white: #fff !default;
+$transparent: transparent !default;
+$black: #000 !default;
+$white: #fff !default;
 
-$color-very-very-light-grey: #f6f6f6 !default;
-$color-very-light-grey: #ececec !default;
-$color-light-grey: #dddddd !default;
-$color-grey: #b6b6b6 !default;
-$color-dark: #303030 !default;
-$color-very-dark: #101010 !default;
+$very-very-light-grey: #f6f6f6 !default;
+$very-light-grey: #ececec !default;
+$light-grey: #dddddd !default;
+$grey: #b6b6b6 !default;
+$dark: #303030 !default;
+$very-dark: #101010 !default;
 
-$color-red: #F44336 !default;
-$color-dark-red: #B71C1C !default;
+$red: #F44336 !default;
+$dark-red: #B71C1C !default;
 
-$color-pink: #E91E63 !default;
-$color-dark-pink: #880E4F !default;
+$pink: #E91E63 !default;
+$dark-pink: #880E4F !default;
 
-$color-orange: #FF9800 !default;
-$color-dark-orange: #E65100 !default;
+$orange: #FF9800 !default;
+$dark-orange: #E65100 !default;
 
-$color-yellow: #FFEB3B !default;
-$color-dark-yellow: #F9A825 !default;
+$yellow: #FFEB3B !default;
+$dark-yellow: #F9A825 !default;
 
-$color-green: #4CAF50 !default;
-$color-dark-green: #1B5E20 !default;
+$green: #4CAF50 !default;
+$dark-green: #1B5E20 !default;
 
-$color-purple: #9C27B0 !default;
-$color-dark-purple: #4A148C !default;
+$purple: #9C27B0 !default;
+$dark-purple: #4A148C !default;
 
-$color-blue: #2196F3 !default;
-$color-dark-blue: #0D47A1 !default;
+$blue: #2196F3 !default;
+$dark-blue: #0D47A1 !default;
 
 
 
@@ -44,6 +44,8 @@ $font-display: null !default;
 
 $font-size-small: 0.75em !default;
 $font-size-large: 1.25em !default;
+
+// $font-size-mono: 0.85em !default; // Optional
 
 $font-size-display: $font-size-large !default;
 $font-size-uppercase: null !default;

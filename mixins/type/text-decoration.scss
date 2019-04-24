@@ -1,0 +1,26 @@
+@mixin underline ($color: null) {
+  text-decoration-line: underline;
+
+  @if ($color) {
+    text-decoration-color: $color;
+  }
+
+}
+
+@mixin strike-through {
+  text-decoration-line: strike-through;
+}
+
+@mixin overline {
+  text-decoration-line: overline;
+}
+
+
+
+@mixin text-decoration-color ($color) {
+  text-decoration-color: $color;
+}
+
+@mixin no-text-decoration-color {
+  @include text-decoration-color(transparent);
+}

@@ -29,6 +29,7 @@ Import default variables, functions and mixins in your Sass files:
 // These WILL output CSS
 @import '~moabit/font-face';
 @import '~moabit/normalize';
+@import '~moabit/defaults';
 
 // The rest of your style codebase
 // @import './defaults/forms';
