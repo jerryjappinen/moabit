@@ -1,30 +1,32 @@
+// Phone only
 @mixin phone {
   @include screen-under-or-at($breakpoint-phone) {
     @content;
   }
 }
 
-// Not phone, but anything above
+// Tablet, desktop or very high res
 @mixin tablet {
-  @include screen-over($breakpoint-phone) {
+  @include screen-over-or-at($breakpoint-phone) {
     @content;
   }
 }
 
-// Small screens only
+// Phone and tablet only
 @mixin under-desktop {
-  @include screen-under-or-at($breakpoint-tablet) {
+  @include screen-under($breakpoint-tablet) {
     @content;
   }
 }
 
-// Over tablet breakpoint
+// Desktop or very high res
 @mixin desktop {
-  @include screen-over($breakpoint-tablet) {
+  @include screen-over-or-at($breakpoint-tablet) {
     @content;
   }
 }
 
+// Very high res (over typical Macbook width)
 @mixin hd {
   @include screen-over($breakpoint-hd) {
     @content;

@@ -192,9 +192,9 @@ $breakpoint-large: 1280px !default;
 $breakpoint-very-large: 1440px !default;
 $breakpoint-full: 1980px !default;
 
-$breakpoint-phone: $width-ipad - 1px;
-$breakpoint-tablet: $breakpoint-large - 1px;
-$breakpoint-hd: 1680px - 1px;
+$breakpoint-phone: $breakpoint-small;
+$breakpoint-tablet: $breakpoint-large;
+$breakpoint-hd: $breakpoint-very-large;
 
 
 
