@@ -216,9 +216,10 @@ $default-line-height: $line-height !default;
 
 $default-background-color: $white !default;
 
-$default-light-discreet-color: $very-light-grey !default;
+$default-discreet-light-color: $very-light-grey !default;
 $default-discreet-color: $light-grey !default;
-$default-dark-discreet-color: $grey !default;
+$default-discreet-dark-color: $grey !default;
+$default-discreet-text-color: $default-dark-discreet-color !default;
 
 $default-text-color: $dark !default;
 $default-link-color: $blue !default;
