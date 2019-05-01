@@ -1,0 +1,57 @@
+@mixin uppercase {
+  text-transform: uppercase;
+
+  @if $font-size-uppercase {
+    font-size: $font-size-uppercase;
+  }
+
+}
+
+@mixin small-font {
+  font-size: $font-size-small;
+}
+
+@mixin system-font {
+  font-family: $font-system;
+}
+
+@mixin large-font {
+  font-size: $font-size-large;
+  // line-height: $line-height-loose;
+
+  @include tablet {
+    font-size: 1.4em;
+  }
+
+}
+
+@mixin display-font {
+  font-size: $font-size-large;
+
+  @if $font-display {
+    font-family: $font-display;
+  }
+
+}
+
+@mixin discreet {
+  color: $default-discreet-text-color;
+}
+
+@mixin strong {
+  font-weight: $font-weight-bold;
+}
+
+@mixin semi-strong {
+  font-weight: $font-weight-semibold;
+}
+
+@mixin link {
+  color: $default-link-color;
+
+  &:hover,
+  &:active {
+    color: $default-link-active-color;
+  }
+
+}
