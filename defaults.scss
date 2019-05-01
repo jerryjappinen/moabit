@@ -116,7 +116,7 @@ kbd,
 samp {
   font-family: $font-mono;
 
-  @if variable-exists($font-size-mono) {
+  @if variable-exists(font-size-mono) {
     font-size: $font-size-mono;
   }
 
