@@ -2,15 +2,15 @@
 
 // Color values
 $transparent: transparent !default;
-$black: #000 !default;
-$white: #fff !default;
 
+$white: #fff !default;
 $very-very-light-grey: #f6f6f6 !default;
 $very-light-grey: #ececec !default;
 $light-grey: #dddddd !default;
 $grey: #b6b6b6 !default;
 $dark: #303030 !default;
 $very-dark: #101010 !default;
+$black: #000 !default;
 
 $red: #F44336 !default;
 $dark-red: #B71C1C !default;
@@ -40,24 +40,31 @@ $font-system: system-ui, -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Robot
 $font-sans: $font-system;
 $font-serif: 'Droid Serif', 'Georgia', serif !default;
 $font-mono: 'Roboto Mono', 'Monaco', 'Menlo', 'Segoe UI Mono', 'Consolas', courier, monospace !default;
-$font-display: null !default;
+$font-display: null !default; // Optional
 
 $font-size-small: 0.75em !default;
 $font-size-large: 1.25em !default;
 
-// $font-size-mono: 0.85em !default; // Optional
+$font-size-display: $font-size-large !default; // Optional
+$font-size-mono: 0.875em !default; // Optional
+$font-size-uppercase: null !default; // Optional
 
-$font-size-display: $font-size-large !default;
-$font-size-uppercase: null !default;
-
+$font-weight-semibold: 700 !default;
 $font-weight-bold: 700 !default;
+$font-weight-headline: null !default;
 
 // Line heights
-// NOTE: keep these unitless
-$line-height-tight: 1.5 !default;
-$line-height: 1.8 !default;
+$line-height-very-tight: 1.2 !default;
+$line-height-tight: 1.4 !default;
+$line-height: 1.6 !default;
 $line-height-loose: 2 !default;
 $line-height-print: 1.5 !default;
+
+$line-height-very-tight-em: $line-height-very-tight * 1em;
+$line-height-tight-em: $line-height-tight * 1em;
+$line-height-em: $line-height * 1em;
+$line-height-loose-em: $line-height-loose * 1em;
+$line-height-print-em: $line-height-print * 1em;
 
 // Local web fonts to generate a font-face definitions based on
 //
@@ -95,8 +102,8 @@ $line-height-print: 1.5 !default;
 
 // Radiuses
 $radius-tight: 2px !default;
-$radius: 4px !default;
-$radius-loose: 6px !default;
+$radius: 5px !default;
+$radius-loose: 10px !default;
 
 
 
@@ -113,9 +120,9 @@ $thick-border-width: 0.25em !default;
 
 $pad-tight-vertical: 2px !default;
 $pad-tight-horizontal: 6px !default;
-$pad-vertical: 8px !default;
+$pad-vertical: 6px !default;
 $pad-horizontal: 12px !default;
-$pad-loose-vertical: 14px !default;
+$pad-loose-vertical: 10px !default;
 $pad-loose-horizontal: 18px !default;
 
 $buffer-very-tight: 0.4rem; // em
@@ -216,8 +223,8 @@ $default-border-color: $color-light-grey !default;
 
 $default-transition-duration: $transition-fast !default;
 
-// NOTE: don't touch this unles syou know what you're doing
+// NOTE: don't touch this unless you know what you're doing
 $default-transition-easing: null !default;
 
-$default-shadow-opacity: 0.15 !default;
+$default-shadow-opacity: 0.2 !default;
 $default-shadow-color: $color-dark !default;
