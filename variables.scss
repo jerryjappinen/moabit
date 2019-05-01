@@ -214,12 +214,16 @@ $default-font: $font-sans !default;
 $default-font-size: 16px !default;
 $default-line-height: $line-height !default;
 
-$default-background-color: $color-white !default;
-$default-discreet-text-color: $color-grey !default;
-$default-text-color: $color-dark !default;
-$default-link-color: $color-blue !default;
-$default-link-color-active: $color-dark-blue !default;
-$default-border-color: $color-light-grey !default;
+$default-background-color: $white !default;
+
+$default-light-discreet-color: $very-light-grey !default;
+$default-discreet-color: $light-grey !default;
+$default-dark-discreet-color: $grey !default;
+
+$default-text-color: $dark !default;
+$default-link-color: $blue !default;
+$default-link-color-active: $dark-blue !default;
+$default-border-color: $light-grey !default;
 
 $default-transition-duration: $transition-fast !default;
 
@@ -227,4 +231,4 @@ $default-transition-duration: $transition-fast !default;
 $default-transition-easing: null !default;
 
 $default-shadow-opacity: 0.2 !default;
-$default-shadow-color: $color-dark !default;
+$default-shadow-color: $dark !default;
