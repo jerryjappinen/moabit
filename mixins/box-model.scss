@@ -1,22 +1,3 @@
-@import './border/border-collapse';
-@import './border/box-sizing';
-
-@mixin background-clip ($value) {
-  background-clip: $value;
-}
-
-@mixin background-clip-content-box {
-  @include background-clip(content-box);
-}
-
-@mixin background-clip-border-box {
-  @include background-clip(border-box);
-}
-
-@mixin background-clip-padding-box {
-  @include background-clip(padding-box);
-}
-
-@mixin background-clip-text {
-  @include background-clip(text);
-}
+@import './box-model/background-clip';
+@import './box-model/border-collapse';
+@import './box-model/box-sizing';
