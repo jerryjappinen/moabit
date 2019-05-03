@@ -1,11 +1,11 @@
 @mixin limit ($breakpoint, $limit: px-to-em($breakpoint)) {
-  @include viewport-over($breakpoint) {
+  @include screen-over($breakpoint) {
     max-width: $limit;
   }
 }
 
 @mixin limit-height ($breakpoint, $limit: px-to-em($breakpoint)) {
-  @include viewport-height-over($breakpoint) {
+  @include screen-height-over($breakpoint) {
     max-height: $limit;
   }
 }

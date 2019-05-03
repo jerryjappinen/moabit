@@ -1,4 +1,4 @@
-@mixin viewport-print {
+@mixin print {
   @media print {
     @content;
   }
