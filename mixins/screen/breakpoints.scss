@@ -5,7 +5,7 @@
 }
 
 @mixin under-or-at-tiny {
-  @include screen-under-or-at-under($breakpoint-tiny) {
+  @include screen-under-or-at($breakpoint-tiny) {
     @content;
   }
 }
@@ -31,7 +31,7 @@
 }
 
 @mixin under-or-at-small {
-  @include screen-under-or-at-under($breakpoint-small) {
+  @include screen-under-or-at($breakpoint-small) {
     @content;
   }
 }
@@ -43,7 +43,7 @@
 }
 
 @mixin over-or-at-small {
-  @include screen-over-or-at-over($breakpoint-small) {
+  @include screen-over-or-at($breakpoint-small) {
     @content;
   }
 }
@@ -57,7 +57,7 @@
 }
 
 @mixin under-or-at-medium {
-  @include screen-under-or-at-under($breakpoint-medium) {
+  @include screen-under-or-at($breakpoint-medium) {
     @content;
   }
 }
@@ -69,7 +69,7 @@
 }
 
 @mixin over-or-at-medium {
-  @include screen-over-or-at-over($breakpoint-medium) {
+  @include screen-over-or-at($breakpoint-medium) {
     @content;
   }
 }
@@ -83,7 +83,7 @@
 }
 
 @mixin under-or-at-large {
-  @include screen-under-or-at-under($breakpoint-large) {
+  @include screen-under-or-at($breakpoint-large) {
     @content;
   }
 }
@@ -95,7 +95,7 @@
 }
 
 @mixin over-or-at-large {
-  @include screen-over-or-at-over($breakpoint-large) {
+  @include screen-over-or-at($breakpoint-large) {
     @content;
   }
 }
@@ -109,7 +109,7 @@
 }
 
 @mixin under-or-at-very-large {
-  @include screen-under-or-at-under($breakpoint-very-large) {
+  @include screen-under-or-at($breakpoint-very-large) {
     @content;
   }
 }
@@ -121,7 +121,7 @@
 }
 
 @mixin over-or-at-very-large {
-  @include screen-over-or-at-over($breakpoint-very-large) {
+  @include screen-over-or-at($breakpoint-very-large) {
     @content;
   }
 }
@@ -135,7 +135,7 @@
 }
 
 @mixin under-or-at-full {
-  @include screen-under-or-at-under($breakpoint-full) {
+  @include screen-under-or-at($breakpoint-full) {
     @content;
   }
 }
@@ -147,7 +147,7 @@
 }
 
 @mixin over-or-at-full {
-  @include screen-over-or-at-over($breakpoint-full) {
+  @include screen-over-or-at($breakpoint-full) {
     @content;
   }
 }
