@@ -1,3 +1,7 @@
 @mixin translucent($opacity: $default-translucent-opacity) {
   opacity: $opacity;
 }
+
+@mixin opaque {
+  opacity: 1;
+}
