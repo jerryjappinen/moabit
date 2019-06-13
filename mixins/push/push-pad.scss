@@ -1,65 +1,65 @@
 // Push mixins are based on $buffer,
 // But sometimes we want to use $pad
 
-@mixin push-pad ($count: 1) {
-  @include push-pad-vertical($count);
-  @include push-pad-horizontal($count);
+@mixin push-pad ($step: 1) {
+  @include push-pad-vertical($step);
+  @include push-pad-horizontal($step);
 }
 
-@mixin push-pad-vertical ($count: 1) {
-  @include push-pad-top($count);
-  @include push-pad-bottom($count);
+@mixin push-pad-vertical ($step: 1) {
+  @include push-pad-top($step);
+  @include push-pad-bottom($step);
 }
 
-@mixin push-pad-horizontal ($count: 1) {
-  @include push-pad-left($count);
-  @include push-pad-right($count);
+@mixin push-pad-horizontal ($step: 1) {
+  @include push-pad-left($step);
+  @include push-pad-right($step);
 }
 
 
 
-@mixin push-pad-top ($count: 1) {
-  margin-top: $count * $pad-vertical;
+@mixin push-pad-top ($step: 1) {
+  margin-top: $step * $pad-vertical;
 }
 
-@mixin push-pad-bottom ($count: 1) {
-  margin-bottom: $count * $pad-vertical;
+@mixin push-pad-bottom ($step: 1) {
+  margin-bottom: $step * $pad-vertical;
 }
 
-@mixin push-pad-left ($count: 1) {
-  margin-left: $count * $pad-horizontal;
+@mixin push-pad-left ($step: 1) {
+  margin-left: $step * $pad-horizontal;
 }
 
-@mixin push-pad-right ($count: 1) {
-  margin-right: $count * $pad-horizontal;
+@mixin push-pad-right ($step: 1) {
+  margin-right: $step * $pad-horizontal;
 }
 
 
 
 // Flip horizontal/vertical
 
-@mixin push-pad-vertical-even ($count: 1) {
-  @include push-pad-top-even($count);
-  @include push-pad-bottom-even($count);
+@mixin push-pad-vertical-even ($step: 1) {
+  @include push-pad-top-even($step);
+  @include push-pad-bottom-even($step);
 }
 
-@mixin push-pad-horizontal-even ($count: 1) {
-  @include push-pad-left-even($count);
-  @include push-pad-right-even($count);
+@mixin push-pad-horizontal-even ($step: 1) {
+  @include push-pad-left-even($step);
+  @include push-pad-right-even($step);
 }
 
-@mixin push-pad-top-even ($count: 1) {
-  margin-top: $count * $pad-horizontal;
+@mixin push-pad-top-even ($step: 1) {
+  margin-top: $step * $pad-horizontal;
 }
 
-@mixin push-pad-bottom-even ($count: 1) {
-  margin-bottom: $count * $pad-horizontal;
+@mixin push-pad-bottom-even ($step: 1) {
+  margin-bottom: $step * $pad-horizontal;
 }
 
-@mixin push-pad-left-even ($count: 1) {
-  margin-left: $count * $pad-vertical;
+@mixin push-pad-left-even ($step: 1) {
+  margin-left: $step * $pad-vertical;
 }
 
-@mixin push-pad-right-even ($count: 1) {
-  margin-right: $count * $pad-vertical;
+@mixin push-pad-right-even ($step: 1) {
+  margin-right: $step * $pad-vertical;
 }

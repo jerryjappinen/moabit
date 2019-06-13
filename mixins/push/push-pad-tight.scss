@@ -1,62 +1,62 @@
-@mixin push-pad-tight ($count: 1) {
-  @include push-pad-tight-vertical($count);
-  @include push-pad-tight-horizontal($count);
+@mixin push-pad-tight ($step: 1) {
+  @include push-pad-tight-vertical($step);
+  @include push-pad-tight-horizontal($step);
 }
 
-@mixin push-pad-tight-vertical ($count: 1) {
-  @include push-pad-tight-top($count);
-  @include push-pad-tight-bottom($count);
+@mixin push-pad-tight-vertical ($step: 1) {
+  @include push-pad-tight-top($step);
+  @include push-pad-tight-bottom($step);
 }
 
-@mixin push-pad-tight-horizontal ($count: 1) {
-  @include push-pad-tight-left($count);
-  @include push-pad-tight-right($count);
+@mixin push-pad-tight-horizontal ($step: 1) {
+  @include push-pad-tight-left($step);
+  @include push-pad-tight-right($step);
 }
 
 
 
-@mixin push-pad-tight-top ($count: 1) {
-  margin-top: $count * $pad-tight-vertical;
+@mixin push-pad-tight-top ($step: 1) {
+  margin-top: $step * $pad-tight-vertical;
 }
 
-@mixin push-pad-tight-bottom ($count: 1) {
-  margin-bottom: $count * $pad-tight-vertical;
+@mixin push-pad-tight-bottom ($step: 1) {
+  margin-bottom: $step * $pad-tight-vertical;
 }
 
-@mixin push-pad-tight-left ($count: 1) {
-  margin-left: $count * $pad-tight-horizontal;
+@mixin push-pad-tight-left ($step: 1) {
+  margin-left: $step * $pad-tight-horizontal;
 }
 
-@mixin push-pad-tight-right ($count: 1) {
-  margin-right: $count * $pad-tight-horizontal;
+@mixin push-pad-tight-right ($step: 1) {
+  margin-right: $step * $pad-tight-horizontal;
 }
 
 
 
 // Flip horizontal/vertical
 
-@mixin push-pad-tight-vertical-even ($count: 1) {
-  @include push-pad-tight-top-even($count);
-  @include push-pad-tight-bottom-even($count);
+@mixin push-pad-tight-vertical-even ($step: 1) {
+  @include push-pad-tight-top-even($step);
+  @include push-pad-tight-bottom-even($step);
 }
 
-@mixin push-pad-tight-horizontal-even ($count: 1) {
-  @include push-pad-tight-left-even($count);
-  @include push-pad-tight-right-even($count);
+@mixin push-pad-tight-horizontal-even ($step: 1) {
+  @include push-pad-tight-left-even($step);
+  @include push-pad-tight-right-even($step);
 }
 
-@mixin push-pad-tight-top-even ($count: 1) {
-  margin-top: $count * $pad-tight-horizontal;
+@mixin push-pad-tight-top-even ($step: 1) {
+  margin-top: $step * $pad-tight-horizontal;
 }
 
-@mixin push-pad-tight-bottom-even ($count: 1) {
-  margin-bottom: $count * $pad-tight-horizontal;
+@mixin push-pad-tight-bottom-even ($step: 1) {
+  margin-bottom: $step * $pad-tight-horizontal;
 }
 
-@mixin push-pad-tight-left-even ($count: 1) {
-  margin-left: $count * $pad-tight-vertical;
+@mixin push-pad-tight-left-even ($step: 1) {
+  margin-left: $step * $pad-tight-vertical;
 }
 
-@mixin push-pad-tight-right-even ($count: 1) {
-  margin-right: $count * $pad-tight-vertical;
+@mixin push-pad-tight-right-even ($step: 1) {
+  margin-right: $step * $pad-tight-vertical;
 }

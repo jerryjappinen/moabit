@@ -1,54 +1,54 @@
 // Double margins
 
-@mixin push-loose {
-  @include push-loose-horizontal;
-  @include push-loose-vertical;
+@mixin push-loose ($step: 1) {
+  @include push-loose-horizontal($step);
+  @include push-loose-vertical($step);
 }
 
-@mixin push-loose-even {
-  @include push-loose-horizontal;
-  @include push-loose-vertical-even;
+@mixin push-loose-even ($step: 1) {
+  @include push-loose-horizontal($step);
+  @include push-loose-vertical-even($step);
 }
 
 
 
 // Pane
 
-@mixin push-loose-horizontal {
-  @include push-loose-left;
-  @include push-loose-right;
+@mixin push-loose-horizontal ($step: 1) {
+  @include push-loose-left($step);
+  @include push-loose-right($step);
 }
 
-@mixin push-loose-vertical {
-  @include push-loose-top;
-  @include push-loose-bottom;
+@mixin push-loose-vertical ($step: 1) {
+  @include push-loose-top($step);
+  @include push-loose-bottom($step);
 }
 
-@mixin push-loose-vertical-even {
-  @include push-loose-top-even;
-  @include push-loose-bottom;
+@mixin push-loose-vertical-even ($step: 1) {
+  @include push-loose-top-even($step);
+  @include push-loose-bottom($step);
 }
 
 
 
 // Single
 
-@mixin push-loose-top {
-  margin-top: $buffer;
+@mixin push-loose-top ($step: 1) {
+  margin-top: $step * $buffer;
 }
 
-@mixin push-loose-top-even {
-  margin-top: $buffer-loose;
+@mixin push-loose-top-even ($step: 1) {
+  margin-top: $step * $buffer-loose;
 }
 
-@mixin push-loose-right {
-  margin-right: $buffer-loose;
+@mixin push-loose-right ($step: 1) {
+  margin-right: $step * $buffer-loose;
 }
 
-@mixin push-loose-bottom {
-  margin-bottom: $buffer-loose;
+@mixin push-loose-bottom ($step: 1) {
+  margin-bottom: $step * $buffer-loose;
 }
 
-@mixin push-loose-left {
-  margin-left: $buffer-loose;
+@mixin push-loose-left ($step: 1) {
+  margin-left: $step * $buffer-loose;
 }
