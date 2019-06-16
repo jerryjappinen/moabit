@@ -26,9 +26,16 @@
   }
 }
 
-// Very high res (over typical Macbook width)
+// Very high res (larger than typical MacBook width)
 @mixin hd {
   @include screen-over($breakpoint-hd) {
+    @content;
+  }
+}
+
+// Very very high res (typical desktop display when fullscreen)
+@mixin full {
+  @include screen-over($breakpoint-full) {
     @content;
   }
 }
