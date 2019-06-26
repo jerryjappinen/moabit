@@ -57,17 +57,17 @@
 //     BOTTOM
 
 @mixin transform-from-top ($z: 0) {
-  @include transform-top-center($z);
+  @include transform-from-top-center($z);
 }
 
 @mixin transform-from-right ($z: 0) {
-  @include transform-center-right($z);
+  @include transform-from-center-right($z);
 }
 
 @mixin transform-from-bottom ($z: 0) {
-  @include transform-bottom-center($z);
+  @include transform-from-bottom-center($z);
 }
 
 @mixin transform-from-left ($z: 0) {
-  @include transform-center-left($z);
+  @include transform-from-center-left($z);
 }
