@@ -13,7 +13,7 @@
 
 
 
-@mixin grid-gap ($column-gap: 0, $row-gap: null) {
+@mixin grid-gap ($column-gap: 0, $row-gap: $column-gap) {
   @include grid-column-gap($column-gap);
 
   @if variable-exists(row-gap) and $row-gap != null {
