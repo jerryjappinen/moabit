@@ -4,7 +4,9 @@
   "description": "Collection of useful Sass mixins and functions",
   "main": "index.scss",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "patch": "npm version patch -m \"New patch version\" && npm publish",
+    "minor": "npm version minor -m \"New minor version\" && npm publish",
+    "major": "npm version major -m \"New major version\" && npm publish"
   },
   "repository": {
     "type": "git",
