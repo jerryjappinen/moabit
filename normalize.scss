@@ -160,6 +160,9 @@ textarea {
   max-width: 100%;
 }
 
+iframe,
+img,
+svg,
 video {
   max-height: 100%;
 }
@@ -207,7 +210,6 @@ img {
 svg,
 img {
   display: inline-block;
-  max-height: 100%;
   vertical-align: middle;
 }
 
