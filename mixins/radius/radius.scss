@@ -3,10 +3,6 @@
   @include radius-bottom($rad);
 }
 
-@mixin round ($rad: 9999em) {
-  @include radius($rad);
-}
-
 @mixin radius-top ($rad: $radius) {
   @include radius-top-left($rad);
   @include radius-top-right($rad);
