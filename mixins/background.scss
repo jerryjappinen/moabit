@@ -9,7 +9,7 @@
 }
 
 @mixin background-color ($color, $opacity: 1) {
-  background-color: color-translucent($color, $opacity);
+  background-color: translucent($color, $opacity);
 }
 
 @mixin background-image ($path: null) {
