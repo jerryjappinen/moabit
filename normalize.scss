@@ -214,9 +214,9 @@ img {
 }
 
 // Correct overflows in IE9
-svg:not(:root) {
-  overflow: hidden;
-}
+// svg:not(:root) {
+//   overflow: hidden;
+// }
 
 pre {
   word-wrap: break-word;
