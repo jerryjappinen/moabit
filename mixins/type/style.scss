@@ -50,7 +50,7 @@
   color: $default-link-color;
 
   @if $default-link-weight {
-    font-family: $default-link-weight;
+    font-weight: $default-link-weight;
   }
 
   &:hover,
