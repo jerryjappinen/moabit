@@ -227,9 +227,11 @@ $default-discreet-color: $light-grey !default;
 $default-discreet-color-dark: $grey !default;
 $default-discreet-text-color: $default-discreet-color-dark !default;
 
-$default-text-color: $dark !default;
 $default-link-color: $blue !default;
 $default-link-active-color: $dark-blue !default;
+$default-link-weight: null !default;
+
+$default-text-color: $dark !default;
 $default-border-color: $light-grey !default;
 $default-translucent-opacity: 0.4 !default;
 

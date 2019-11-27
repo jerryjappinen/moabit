@@ -49,6 +49,10 @@
 @mixin link {
   color: $default-link-color;
 
+  @if $default-link-weight {
+    font-family: $default-link-weight;
+  }
+
   &:hover,
   &:active {
     color: $default-link-active-color;
