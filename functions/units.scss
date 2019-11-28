@@ -10,7 +10,7 @@
 // We use this in the `limit` mixins that
 // E.g. breakpoint 640px -> 40em; 40 em can then be scaled while breakpoint remains in pixels
 @function px-to-em ($pixels) {
-  @if unit($pixels) == 'px' {
+  @if type-of($number) == 'number' and unit($pixels) == 'px' {
     @return (number($pixels) / number($default-font-size)) * 1em;
   }
   @return $pixels;

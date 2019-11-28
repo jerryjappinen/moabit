@@ -11,7 +11,7 @@
 }
 
 @mixin screen-under ($breakpoint) {
-	@if (unit($breakpoint) == 'px') {
+	@if (type-of($number) == 'number' and unit($breakpoint) == 'px') {
 		$breakpoint: $breakpoint - 1px;
 	}
 	@include screen-under-or-at($breakpoint) {
@@ -20,7 +20,7 @@
 }
 
 @mixin screen-over ($breakpoint) {
-	@if (unit($breakpoint) == 'px') {
+	@if (type-of($number) == 'number' and unit($breakpoint) == 'px') {
 		$breakpoint: $breakpoint + 1px;
 	}
 	@include screen-over-or-at($breakpoint) {
