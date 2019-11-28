@@ -25,11 +25,15 @@
 
 }
 
-@mixin display-font {
+@mixin headline-font {
   font-size: $font-size-large;
 
-  @if $font-display {
-    font-family: $font-display;
+  @if $line-height-headline {
+    line-height: $line-height-headline;
+  }
+
+  @if $font-headline {
+    font-family: $font-headline;
   }
 
 }
