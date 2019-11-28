@@ -12,7 +12,7 @@
 }
 
 @mixin screen-height-under ($breakpoint) {
-	@if (type-of($number) == 'number' and unit($breakpoint) == 'px') {
+	@if (type-of($breakpoint) == 'number' and unit($breakpoint) == 'px') {
 		$breakpoint: $breakpoint - 1px;
 	}
 	@include screen-height-under-or-at($breakpoint) {
@@ -21,7 +21,7 @@
 }
 
 @mixin screen-height-over ($breakpoint) {
-	@if (type-of($number) == 'number' and unit($breakpoint) == 'px') {
+	@if (type-of($breakpoint) == 'number' and unit($breakpoint) == 'px') {
 		$breakpoint: $breakpoint + 1px;
 	}
 	@include screen-height-over-or-at($breakpoint) {
