@@ -42,14 +42,14 @@
 
 // Very very high res (typical desktop display when fullscreen)
 @mixin full {
-  @include screen-over($breakpoint-full) {
+  @include screen-over-or-at($breakpoint-full) {
     @content;
   }
 }
 
 // Screens that aren't massive
 @mixin under-full {
-  @include screen-under-or-at($breakpoint-full) {
+  @include screen-under($breakpoint-full) {
     @content;
   }
 }
