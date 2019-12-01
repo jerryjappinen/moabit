@@ -12,16 +12,16 @@
   }
 }
 
-// Phone and tablet only
-@mixin under-desktop {
-  @include screen-under($breakpoint-tablet) {
+// Desktop or very high res
+@mixin desktop {
+  @include screen-over-or-at($breakpoint-tablet) {
     @content;
   }
 }
 
-// Desktop or very high res
-@mixin desktop {
-  @include screen-over-or-at($breakpoint-tablet) {
+// Phone and tablet only
+@mixin under-desktop {
+  @include screen-under($breakpoint-tablet) {
     @content;
   }
 }
@@ -33,9 +33,23 @@
   }
 }
 
+// Smaller screens (laptops and under)
+@mixin under-hd {
+  @include screen-under-or-at($breakpoint-hd) {
+    @content;
+  }
+}
+
 // Very very high res (typical desktop display when fullscreen)
 @mixin full {
   @include screen-over($breakpoint-full) {
+    @content;
+  }
+}
+
+// Screens that aren't massive
+@mixin under-full {
+  @include screen-under-or-at($breakpoint-full) {
     @content;
   }
 }
