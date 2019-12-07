@@ -30,8 +30,8 @@
 }
 
 @mixin radius-left ($rad: $radius) {
-  @include radius-top-left;
-  @include radius-bottom-left;
+  @include radius-top-left($rad);
+  @include radius-bottom-left($rad);
 }
 
 @mixin radius-right ($rad: $radius) {
