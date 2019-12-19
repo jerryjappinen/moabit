@@ -7,7 +7,7 @@
 
 // Tablet, desktop or very high res
 @mixin tablet {
-  @include screen-over-or-at($breakpoint-phone) {
+  @include screen-over($breakpoint-phone) {
     @content;
   }
 }
