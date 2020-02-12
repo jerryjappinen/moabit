@@ -202,6 +202,8 @@ audio:not([controls]) {
 }
 
 img {
+  width: auto;
+  height: auto;
   // stylelint-disable property-no-vendor-prefix
   -ms-interpolation-mode: bicubic;
   // stylelint-enable property-no-vendor-prefix
