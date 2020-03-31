@@ -1,3 +1,5 @@
+@import './mixins/font-face';
+
 @if variable-exists(local-web-fonts) {
   @each $values in $local-web-fonts {
 
@@ -8,12 +10,7 @@
     $path: map-get($values, path);
 
     // Print @font-face definitions
-    @include font-face (
-      $font-family,
-      $font-weight,
-      $font-style,
-      $path
-    );
+    @include font-face ($font-family, $font-weight, $font-style, $path);
 
   }
 }
