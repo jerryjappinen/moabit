@@ -44,7 +44,7 @@ $dark-blue: #0D47A1 !default;
 
 // Typography
 $font-system: system-ui, -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif !default;
-$font-sans: $font-system;
+$font-sans: $font-system !default;
 $font-serif: 'Droid Serif', 'Georgia', serif !default;
 $font-mono: 'Roboto Mono', 'Monaco', 'Menlo', 'Segoe UI Mono', 'Consolas', courier, monospace !default;
 $font-headline: null !default; // Optional
