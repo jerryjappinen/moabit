@@ -11,10 +11,6 @@
     background-color: $scrollbar-track-color;
   }
 
-  ::-webkit-scrollbar-button {
-    background-color: $scrollbar-color;
-  }
-
   ::-webkit-scrollbar-thumb {
     border-width: 0;
     border-style: solid;
