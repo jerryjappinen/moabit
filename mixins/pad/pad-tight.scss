@@ -1,29 +1,28 @@
-// Default pad
-@mixin pad {
-  @include pad-horizontal;
-  @include pad-vertical;
+@mixin pad-tight {
+  @include pad-tight-horizontal;
+  @include pad-tight-vertical;
 }
 
 @mixin pad-tight-even {
-  @include pad-horizontal-even;
-  @include pad-vertical;
+  @include pad-tight-horizontal-even;
+  @include pad-tight-vertical;
 }
 
 @mixin pad-tight-even-max {
-  @include pad-horizontal;
-  @include pad-vertical-even;
+  @include pad-tight-horizontal;
+  @include pad-tight-vertical-even;
 }
 
 
 
 @mixin pad-tight-horizontal {
-  @include pad-left;
-  @include pad-right;
+  @include pad-tight-left;
+  @include pad-tight-right;
 }
 
 @mixin pad-tight-horizontal-even {
-  @include pad-left-even;
-  @include pad-right-even;
+  @include pad-tight-left-even;
+  @include pad-tight-right-even;
 }
 
 
@@ -47,13 +46,13 @@
 
 
 @mixin pad-tight-vertical {
-  @include pad-top;
-  @include pad-bottom;
+  @include pad-tight-top;
+  @include pad-tight-bottom;
 }
 
 @mixin pad-tight-vertical-even {
-  @include pad-top-even;
-  @include pad-bottom-even;
+  @include pad-tight-top-even;
+  @include pad-tight-bottom-even;
 }
 
 @mixin pad-tight-top {
