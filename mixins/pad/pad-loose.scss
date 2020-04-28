@@ -1,0 +1,73 @@
+// Default pad
+@mixin pad {
+  @include pad-horizontal;
+  @include pad-vertical;
+}
+
+@mixin pad-loose-even {
+  @include pad-horizontal-even;
+  @include pad-vertical;
+}
+
+@mixin pad-loose-even-max {
+  @include pad-horizontal;
+  @include pad-vertical-even;
+}
+
+
+
+@mixin pad-loose-horizontal {
+  @include pad-left;
+  @include pad-right;
+}
+
+@mixin pad-loose-horizontal-even {
+  @include pad-left-even;
+  @include pad-right-even;
+}
+
+
+
+@mixin pad-loose-right {
+  padding-right: $pad-loose-horizontal;
+}
+
+@mixin pad-loose-right-even {
+  padding-right: $pad-loose-vertical;
+}
+
+@mixin pad-loose-left {
+  padding-left: $pad-loose-horizontal;
+}
+
+@mixin pad-loose-left-even {
+  padding-left: $pad-loose-vertical;
+}
+
+
+
+@mixin pad-loose-vertical {
+  @include pad-top;
+  @include pad-bottom;
+}
+
+@mixin pad-loose-vertical-even {
+  @include pad-top-even;
+  @include pad-bottom-even;
+}
+
+@mixin pad-loose-top {
+  padding-top: $pad-loose-vertical;
+}
+
+@mixin pad-loose-top-even {
+  padding-top: $pad-loose-horizontal;
+}
+
+@mixin pad-loose-bottom {
+  padding-bottom: $pad-loose-vertical;
+}
+
+@mixin pad-loose-bottom-even {
+  padding-bottom: $pad-loose-horizontal;
+}
