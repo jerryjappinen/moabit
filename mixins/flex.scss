@@ -20,6 +20,10 @@
   align-items: flex-end;
 }
 
+@mixin flex-stretch {
+  align-items: stretch;
+}
+
 
 
 @mixin flex-vertical {
