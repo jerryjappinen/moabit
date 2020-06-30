@@ -1,73 +1,73 @@
 // Default pad
-@mixin pad {
-  @include pad-horizontal;
-  @include pad-vertical;
+@mixin pad ($step: 1) {
+  @include pad-horizontal($step);
+  @include pad-vertical($step);
 }
 
-@mixin pad-even {
-  @include pad-horizontal-even;
-  @include pad-vertical;
+@mixin pad-even ($step: 1) {
+  @include pad-horizontal-even($step);
+  @include pad-vertical($step);
 }
 
-@mixin pad-even-max {
-  @include pad-horizontal;
-  @include pad-vertical-even;
-}
-
-
-
-@mixin pad-horizontal {
-  @include pad-left;
-  @include pad-right;
-}
-
-@mixin pad-horizontal-even {
-  @include pad-left-even;
-  @include pad-right-even;
+@mixin pad-even-max ($step: 1) {
+  @include pad-horizontal($step);
+  @include pad-vertical-even($step);
 }
 
 
 
-@mixin pad-right {
-  padding-right: $pad-horizontal;
+@mixin pad-horizontal ($step: 1) {
+  @include pad-left($step);
+  @include pad-right($step);
 }
 
-@mixin pad-right-even {
-  padding-right: $pad-vertical;
-}
-
-@mixin pad-left {
-  padding-left: $pad-horizontal;
-}
-
-@mixin pad-left-even {
-  padding-left: $pad-vertical;
+@mixin pad-horizontal-even ($step: 1) {
+  @include pad-left-even($step);
+  @include pad-right-even($step);
 }
 
 
 
-@mixin pad-vertical {
-  @include pad-top;
-  @include pad-bottom;
+@mixin pad-right ($step: 1) {
+  padding-right: $step * $pad-horizontal;
 }
 
-@mixin pad-vertical-even {
-  @include pad-top-even;
-  @include pad-bottom-even;
+@mixin pad-right-even ($step: 1) {
+  padding-right: $step * $pad-vertical;
 }
 
-@mixin pad-top {
-  padding-top: $pad-vertical;
+@mixin pad-left ($step: 1) {
+  padding-left: $step * $pad-horizontal;
 }
 
-@mixin pad-top-even {
-  padding-top: $pad-horizontal;
+@mixin pad-left-even ($step: 1) {
+  padding-left: $step * $pad-vertical;
 }
 
-@mixin pad-bottom {
-  padding-bottom: $pad-vertical;
+
+
+@mixin pad-vertical ($step: 1) {
+  @include pad-top($step);
+  @include pad-bottom($step);
 }
 
-@mixin pad-bottom-even {
-  padding-bottom: $pad-horizontal;
+@mixin pad-vertical-even ($step: 1) {
+  @include pad-top-even($step);
+  @include pad-bottom-even($step);
+}
+
+@mixin pad-top ($step: 1) {
+  padding-top: $step * $pad-vertical;
+}
+
+@mixin pad-top-even ($step: 1) {
+  padding-top: $step * $pad-horizontal;
+}
+
+@mixin pad-bottom ($step: 1) {
+  padding-bottom: $step * $pad-vertical;
+}
+
+@mixin pad-bottom-even ($step: 1) {
+  padding-bottom: $step * $pad-horizontal;
 }

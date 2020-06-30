@@ -1,72 +1,72 @@
-@mixin pad-tight {
-  @include pad-tight-horizontal;
-  @include pad-tight-vertical;
+@mixin pad-tight ($step: 1) {
+  @include pad-tight-horizontal($step);
+  @include pad-tight-vertical($step);
 }
 
-@mixin pad-tight-even {
-  @include pad-tight-horizontal-even;
-  @include pad-tight-vertical;
+@mixin pad-tight-even ($step: 1) {
+  @include pad-tight-horizontal-even($step);
+  @include pad-tight-vertical($step);
 }
 
-@mixin pad-tight-even-max {
-  @include pad-tight-horizontal;
-  @include pad-tight-vertical-even;
-}
-
-
-
-@mixin pad-tight-horizontal {
-  @include pad-tight-left;
-  @include pad-tight-right;
-}
-
-@mixin pad-tight-horizontal-even {
-  @include pad-tight-left-even;
-  @include pad-tight-right-even;
+@mixin pad-tight-even-max ($step: 1) {
+  @include pad-tight-horizontal($step);
+  @include pad-tight-vertical-even($step);
 }
 
 
 
-@mixin pad-tight-right {
-  padding-right: $pad-tight-horizontal;
+@mixin pad-tight-horizontal ($step: 1) {
+  @include pad-tight-left($step);
+  @include pad-tight-right($step);
 }
 
-@mixin pad-tight-right-even {
-  padding-right: $pad-tight-vertical;
-}
-
-@mixin pad-tight-left {
-  padding-left: $pad-tight-horizontal;
-}
-
-@mixin pad-tight-left-even {
-  padding-left: $pad-tight-vertical;
+@mixin pad-tight-horizontal-even ($step: 1) {
+  @include pad-tight-left-even($step);
+  @include pad-tight-right-even($step);
 }
 
 
 
-@mixin pad-tight-vertical {
-  @include pad-tight-top;
-  @include pad-tight-bottom;
+@mixin pad-tight-right ($step: 1) {
+  padding-right: $step * $pad-tight-horizontal;
 }
 
-@mixin pad-tight-vertical-even {
-  @include pad-tight-top-even;
-  @include pad-tight-bottom-even;
+@mixin pad-tight-right-even ($step: 1) {
+  padding-right: $step * $pad-tight-vertical;
 }
 
-@mixin pad-tight-top {
-  padding-top: $pad-tight-vertical;
+@mixin pad-tight-left ($step: 1) {
+  padding-left: $step * $pad-tight-horizontal;
 }
 
-@mixin pad-tight-top-even {
-  padding-top: $pad-tight-horizontal;
+@mixin pad-tight-left-even ($step: 1) {
+  padding-left: $step * $pad-tight-vertical;
 }
 
-@mixin pad-tight-bottom {
-  padding-bottom: $pad-tight-vertical;
+
+
+@mixin pad-tight-vertical ($step: 1) {
+  @include pad-tight-top($step);
+  @include pad-tight-bottom($step);
 }
 
-@mixin pad-tight-bottom-even {
-  padding-bottom: $pad-tight-horizontal;
+@mixin pad-tight-vertical-even ($step: 1) {
+  @include pad-tight-top-even($step);
+  @include pad-tight-bottom-even($step);
+}
+
+@mixin pad-tight-top ($step: 1) {
+  padding-top: $step * $pad-tight-vertical;
+}
+
+@mixin pad-tight-top-even ($step: 1) {
+  padding-top: $step * $pad-tight-horizontal;
+}
+
+@mixin pad-tight-bottom ($step: 1) {
+  padding-bottom: $step * $pad-tight-vertical;
+}
+
+@mixin pad-tight-bottom-even ($step: 1) {
+  padding-bottom: $step * $pad-tight-horizontal;
 }
