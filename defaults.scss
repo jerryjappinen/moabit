@@ -1,9 +1,27 @@
 body {
-  font-family: $default-font;
-  font-size: $default-font-size;
-  color: $default-text-color;
-  background-color: $default-background-color;
-  line-height: $default-line-height;
+
+  @if variable-exists(default-font) {
+    font-family: $default-font;
+  } @else if variable-exists(font-sans) {
+    font-family: $font-sans;
+  }
+
+  @if variable-exists(default-font-size) {
+    font-size: $default-font-size;
+  }
+
+  @if variable-exists(default-text-color) {
+    color: $default-text-color;
+  }
+
+  @if variable-exists(default-background-color) {
+    background-color: $default-background-color;
+  }
+
+  @if variable-exists(default-line-height) {
+    line-height: $default-line-height;
+  }
+
 }
 
 // NOTE: we can simply provide transition-property to add default transitions to element
@@ -88,12 +106,20 @@ video,
 button,
 input,
 textarea {
-  border-color: $default-border-color;
+
+  @if variable-exists(default-border-color) {
+    border-color: $default-border-color;
+
+    &:before,
+    &:after {
+      border-color: $default-border-color;
+    }
+
+  }
 
   &:before,
   &:after {
     vertical-align: middle;
-    border-color: $default-border-color;
   }
 
 }
@@ -102,19 +128,30 @@ strong,
 dt,
 mark,
 th {
-  font-weight: $font-weight-bold;
+
+  @if variable-exists(font-weight-bold) {
+    font-weight: $font-weight-bold;
+  }
+
 }
 
 blockquote,
 q {
-  font-family: $font-serif;
+
+  @if variable-exists(font-serif) {
+    font-family: $font-serif;
+  }
+
 }
 
 pre,
 code,
 kbd,
 samp {
-  font-family: $font-mono;
+
+  @if variable-exists(font-mono) {
+    font-family: $font-mono;
+  }
 
   @if variable-exists(font-size-mono) {
     font-size: $font-size-mono;

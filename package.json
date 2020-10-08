@@ -4,9 +4,9 @@
   "description": "Collection of useful Sass mixins and functions",
   "main": "index.scss",
   "scripts": {
-    "patch": "npm version patch -m \"New patch version\" && npm publish && git push",
-    "minor": "npm version minor -m \"New minor version\" && npm publish && git push",
-    "major": "npm version major -m \"New major version\" && npm publish && git push"
+    "patch": "npm version patch -m \"New patch version\" && npm publish && git push -u",
+    "minor": "npm version minor -m \"New minor version\" && npm publish && git push -u",
+    "major": "npm version major -m \"New major version\" && npm publish && git push -u"
   },
   "repository": {
     "type": "git",

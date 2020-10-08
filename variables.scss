@@ -238,7 +238,7 @@ $scrollbar-color-active: rgba($scrollbar-base-color, .5) !default;
 // Defaults
 $default-perspective: 600px !default;
 
-$default-font: $font-sans !default;
+$default-font: null !default;
 $default-font-size: 16px !default;
 $default-line-height: $line-height !default;
 
