@@ -9,3 +9,9 @@
 @mixin sans {
   font-family: $font-sans;
 }
+
+@mixin headline-font {
+  @if variable-exists(font-weight-headline) {
+    font-family: $font-weight-headline;
+  }
+}
