@@ -1,11 +1,23 @@
-@mixin type-mono {
-	font-family: $font-mono;
+@mixin mono {
+  font-family: $font-mono;
 }
 
-@mixin type-serif {
-	font-family: $font-serif;
+@mixin serif {
+  font-family: $font-serif;
 }
 
-@mixin type-sans {
-	font-family: $font-sans;
+@mixin sans {
+  font-family: $font-sans;
+}
+
+@mixin headline-font {
+
+  @if variable-exists(font-headline) {
+    font-family: $font-headline;
+  }
+
+  @if variable-exists(font-weight-headline) {
+    font-family: $font-weight-headline;
+  }
+
 }

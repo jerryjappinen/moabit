@@ -1,19 +1,19 @@
-@mixin border {
-  border-width: $border-thick;
+@mixin thick-border {
+  border-width: $thick-border-width;
 }
 
-@mixin border-top {
-  border-top-width: $border-thick;
+@mixin thick-border-top {
+  border-top-width: $thick-border-width;
 }
 
-@mixin border-bottom {
-  border-bottom-width: $border-thick;
+@mixin thick-border-bottom {
+  border-bottom-width: $thick-border-width;
 }
 
-@mixin border-left {
-  border-left-width: $border-thick;
+@mixin thick-border-left {
+  border-left-width: $thick-border-width;
 }
 
-@mixin border-right {
-  border-right-width: $border-thick;
+@mixin thick-border-right {
+  border-right-width: $thick-border-width;
 }

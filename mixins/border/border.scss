@@ -1,19 +1,19 @@
 @mixin border {
-  border-width: $border-hairline;
+  border-width: $hairline-border-width;
 }
 
 @mixin border-top {
-  border-top-width: $border-hairline;
+  border-top-width: $hairline-border-width;
 }
 
 @mixin border-bottom {
-  border-bottom-width: $border-hairline;
+  border-bottom-width: $hairline-border-width;
 }
 
 @mixin border-left {
-  border-left-width: $border-hairline;
+  border-left-width: $hairline-border-width;
 }
 
 @mixin border-right {
-  border-right-width: $border-hairline;
+  border-right-width: $hairline-border-width;
 }

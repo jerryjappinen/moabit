@@ -1,11 +1,11 @@
 // Percentage-based buffers
 
 @mixin buffer-relative {
-	padding: $buffer-relative-tight $buffer-relative $buffer-relative $buffer-relative;
+  padding: $buffer-relative-tight $buffer-relative $buffer-relative $buffer-relative;
 }
 
 @mixin buffer-relative-even {
-	padding: $buffer-relative;
+  padding: $buffer-relative;
 }
 
 
@@ -13,18 +13,18 @@
 // Pane
 
 @mixin buffer-relative-horizontal {
-	padding-left: $buffer-relative;
-	padding-right: $buffer-relative;
+  padding-left: $buffer-relative;
+  padding-right: $buffer-relative;
 }
 
 @mixin buffer-relative-vertical {
-	padding-top: $buffer-relative-tight;
-	padding-bottom: $buffer-relative;
+  padding-top: $buffer-relative-tight;
+  padding-bottom: $buffer-relative;
 }
 
 @mixin buffer-relative-vertical-even {
-	padding-top: $buffer-relative;
-	padding-bottom: $buffer-relative;
+  padding-top: $buffer-relative;
+  padding-bottom: $buffer-relative;
 }
 
 
@@ -32,21 +32,21 @@
 // Single
 
 @mixin buffer-relative-top {
-	padding-top: $buffer-relative-tight;
+  padding-top: $buffer-relative-tight;
 }
 
 @mixin buffer-relative-top-even {
-	padding-top: $buffer-relative;
+  padding-top: $buffer-relative;
 }
 
 @mixin buffer-relative-right {
-	padding-right: $buffer-relative;
+  padding-right: $buffer-relative;
 }
 
 @mixin buffer-relative-bottom {
-	padding-bottom: $buffer-relative;
+  padding-bottom: $buffer-relative;
 }
 
 @mixin buffer-relative-left {
-	padding-left: $buffer-relative;
+  padding-left: $buffer-relative;
 }

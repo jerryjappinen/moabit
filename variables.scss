@@ -1,79 +1,83 @@
 // @import './functions' !default;
 
-// Brands
-$color-airbnb: #fd5c63 !default;
-$color-android: #a4c639 !default;
-$color-behance: #005cff !default;
-$color-behance-dark: #004ed9 !default;
-$color-facebook: #4267b2 !default;
-$color-googleplay: #689f38 !default;
-$color-instagram: #3f729b !default;
-$color-instapaper: #428bca !default;
-$color-ios: #007aff !default;
-$color-medium: #02b875 !default;
-$color-messenger: #007aff !default;
-$color-pinterest: #bd081c !default;
-$color-twitter: #55acee !default;
-$color-whatsapp: #25d366 !default;
-$color-vue: #4fc08d !default;
-$color-vue-dark: #35495d !default;
-
 // Color values
-$color-transparent: transparent !default;
-$color-black: #000 !default;
-$color-white: #fff !default;
+$transparent: transparent !default;
 
-$color-very-very-light-grey: #f6f6f6 !default;
-$color-very-light-grey: #ececec !default;
-$color-light-grey: #dddddd !default;
-$color-grey: #b6b6b6 !default;
-$color-dark: #303030 !default;
-$color-very-dark: #101010 !default;
+$white: #fff !default;
+$very-very-light-grey: #f6f6f6 !default;
+$very-light-grey: #ececec !default;
+$light-grey: #dddddd !default;
+$grey: #b6b6b6 !default;
+$dark: #303030 !default;
+$very-dark: #101010 !default;
+$black: #000 !default;
 
-$color-red: #F44336 !default;
-$color-dark-red: #B71C1C !default;
+$light-red: #ff9891 !default;
+$red: #F44336 !default;
+$dark-red: #B71C1C !default;
 
-$color-pink: #E91E63 !default;
-$color-dark-pink: #880E4F !default;
+$light-pink: #fc72a0 !default;
+$pink: #E91E63 !default;
+$dark-pink: #880E4F !default;
 
-$color-orange: #FF9800 !default;
-$color-dark-orange: #E65100 !default;
+$light-orange: #ffcd82 !default;
+$orange: #FF9800 !default;
+$dark-orange: #E65100 !default;
 
-$color-yellow: #FFEB3B !default;
-$color-dark-yellow: #F9A825 !default;
+$light-yellow: #fff59f !default;
+$yellow: #FFEB3B !default;
+$dark-yellow: #F9A825 !default;
 
-$color-green: #4CAF50 !default;
-$color-dark-green: #1B5E20 !default;
+$light-green: #9ef1a1 !default;
+$green: #42bd46 !default;
+$dark-green: #1B5E20 !default;
 
-$color-purple: #9C27B0 !default;
-$color-dark-purple: #4A148C !default;
+$light-purple: #ea97f9 !default;
+$purple: #9C27B0 !default;
+$dark-purple: #4A148C !default;
 
-$color-blue: #2196F3 !default;
-$color-dark-blue: #0D47A1 !default;
+$light-blue: #8fccff !default;
+$blue: #2196F3 !default;
+$dark-blue: #0D47A1 !default;
 
 
 
 // Typography
-$font-system: system-ui, -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif !default;
-$font-sans: $font-system;
+$font-system: -apple-system, system-ui, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif !default;
+$font-sans: $font-system !default;
 $font-serif: 'Droid Serif', 'Georgia', serif !default;
 $font-mono: 'Roboto Mono', 'Monaco', 'Menlo', 'Segoe UI Mono', 'Consolas', courier, monospace !default;
-$font-display: null !default;
+$font-headline: null !default; // Optional
 
 $font-size-small: 0.75em !default;
 $font-size-large: 1.25em !default;
 
-$font-size-display: $font-size-large !default;
-$font-size-uppercase: null !default;
+$font-size-headline: $font-size-large !default; // Optional
+$font-size-mono: 0.875em !default; // Optional
+$font-size-uppercase: null !default; // Optional
 
+$font-weight-semibold: 600 !default;
 $font-weight-bold: 700 !default;
+$font-weight-headline: null !default;
+
+
 
 // Line heights
-// NOTE: keep these unitless
-$line-height-tight: 1.5 !default;
-$line-height: 1.8 !default;
+$line-height-very-tight: 1.2 !default;
+$line-height-tight: 1.4 !default;
+$line-height: 1.6 !default;
 $line-height-loose: 2 !default;
 $line-height-print: 1.5 !default;
+
+$line-height-headline: $line-height-very-tight !default;
+
+$line-height-very-tight-em: $line-height-very-tight * 1em;
+$line-height-tight-em: $line-height-tight * 1em;
+$line-height-em: $line-height * 1em;
+$line-height-loose-em: $line-height-loose * 1em;
+$line-height-print-em: $line-height-print * 1em;
+
+$line-height-headline-em: $line-height-headline * 1em;
 
 // Local web fonts to generate a font-face definitions based on
 //
@@ -81,38 +85,38 @@ $line-height-print: 1.5 !default;
 // - remember to use trailing commas with Sass nested lists to avoid gotchas
 // - See `font-face.scss` and `mixin-font-face.scss`
 // $local-web-fonts: (
-// 	(
-// 		font-family: 'Source Sans Pro',
-// 		font-weight: 400,
-// 		font-style: normal,
-// 		path: 'source-sans/sourcesanspro-regular-webfont',
-// 	),
-// 	(
-// 		font-family: 'Source Sans Pro',
-// 		font-weight: 400,
-// 		font-style: italic,
-// 		path: 'source-sans/sourcesanspro-italic-webfont',
-// 	),
-// 	(
-// 		font-family: 'Source Sans Pro',
-// 		font-weight: 700,
-// 		font-style: normal,
-// 		path: 'source-sans/sourcesanspro-bold-webfont',
-// 	),
-// 	(
-// 		font-family: 'Source Sans Pro',
-// 		font-weight: 700,
-// 		font-style: italic,
-// 		path: 'source-sans/sourcesanspro-bolditalic-webfont',
-// 	),
+//   (
+//     font-family: 'Source Sans Pro',
+//     font-weight: 400,
+//     font-style: normal,
+//     path: 'source-sans/sourcesanspro-regular-webfont',
+//   ),
+//   (
+//     font-family: 'Source Sans Pro',
+//     font-weight: 400,
+//     font-style: italic,
+//     path: 'source-sans/sourcesanspro-italic-webfont',
+//   ),
+//   (
+//     font-family: 'Source Sans Pro',
+//     font-weight: 700,
+//     font-style: normal,
+//     path: 'source-sans/sourcesanspro-bold-webfont',
+//   ),
+//   (
+//     font-family: 'Source Sans Pro',
+//     font-weight: 700,
+//     font-style: italic,
+//     path: 'source-sans/sourcesanspro-bolditalic-webfont',
+//   ),
 // );
 
 
 
 // Radiuses
 $radius-tight: 2px !default;
-$radius: 4px !default;
-$radius-loose: 6px !default;
+$radius: 5px !default;
+$radius-loose: 10px !default;
 
 
 
@@ -123,21 +127,21 @@ $rhythm-tight: 0.8em !default;
 $rhythm-base: 1.6em !default;
 $rhythm-loose: 3.2em !default;
 
-$border-hairline: 1px !default;
-$border-dashed: 2px !default;
-$border-thick: 0.25em !default;
+$hairline-border-width: 1px !default;
+$dashed-border-width: 2px !default;
+$thick-border-width: 0.25em !default;
 
 $pad-tight-vertical: 2px !default;
 $pad-tight-horizontal: 6px !default;
-$pad-vertical: 8px !default;
+$pad-vertical: 6px !default;
 $pad-horizontal: 12px !default;
-$pad-loose-vertical: 14px !default;
+$pad-loose-vertical: 10px !default;
 $pad-loose-horizontal: 18px !default;
 
 $buffer-very-tight: 0.4rem; // em
-$buffer-tight: $buffer-very-tight * 2; 	// 0.8em
-$buffer: $buffer-tight * 2; 			// 1.6em
-$buffer-loose: $buffer * 2; 			// 3.2em
+$buffer-tight: $buffer-very-tight * 2;   // 0.8em
+$buffer: $buffer-tight * 2;       // 1.6em
+$buffer-loose: $buffer * 2;       // 3.2em
 
 $buffer-relative-tight: 2% !default;
 $buffer-relative: 6% !default;
@@ -170,7 +174,8 @@ $easing-smooth: cubic-bezier(0.19, 1, 0.22, 1) !default;
 
 
 // Pixel ratios
-$hdpi: 140dpi; // What to regard as limit for high pixel density (retina)
+// What to regard as limit for high pixel density (retina)
+$hdpi: 140dpi !default;
 
 
 
@@ -200,35 +205,62 @@ $height-ipad-pro: 1366px !default;
 
 
 // Breakpoints
-// See `mixin-viewport.scss`
 // NOTE: defining breakpoints in px gives more predictable control on devices, and avoids any issues when em is scaled
 $breakpoint-tiny: $width-iphone-6-plus !default;
-$breakpoint-small: $height-iphone-6 !default;
-$breakpoint-medium: 1024px !default;
+$breakpoint-small: 800px !default;
+$breakpoint-medium: 960px !default;
 $breakpoint-large: 1280px !default;
 $breakpoint-very-large: 1440px !default;
-$breakpoint-full: 1980px !default;
+$breakpoint-full: 1920px !default;
+
+$breakpoint-phone: $breakpoint-small !default;
+$breakpoint-tablet: $breakpoint-large !default;
+$breakpoint-hd: $breakpoint-very-large !default;
+
+
+
+// Custom scrollbars
+$scrollbar-margin: 4px !default;
+$scrollbar-size: 4px !default;
+$scrollbar-radius: 2px !default;
+$scrollbar-minlength: 1.5rem !default; // Minimum length of scrollbar thumb (width of horizontal, height of vertical)
+$scrollbar-ff-width: thin !default; // FF-only accepts auto, thin, none
+$scrollbar-track-color: transparent !default;
+
+$scrollbar-base-color: #888 !default;
+$scrollbar-border-color: transparent !default;
+$scrollbar-color: rgba($scrollbar-base-color, .3) !default;
+$scrollbar-color-hover: rgba($scrollbar-base-color, .4) !default;
+$scrollbar-color-active: rgba($scrollbar-base-color, .5) !default;
 
 
 
 // Defaults
 $default-perspective: 600px !default;
 
-$default-font: $font-sans !default;
+$default-font: null !default;
 $default-font-size: 16px !default;
 $default-line-height: $line-height !default;
 
-$default-color-background: $color-white !default;
-$default-color-discreet: $color-grey !default;
-$default-color-text: $color-dark !default;
-$default-color-link: $color-blue !default;
-$default-color-link-active: $color-dark-blue !default;
-$default-color-border: $color-light-grey !default;
+$default-background-color: $white !default;
+
+$default-discreet-color-light: $very-light-grey !default;
+$default-discreet-color: $light-grey !default;
+$default-discreet-color-dark: $grey !default;
+$default-discreet-text-color: $default-discreet-color-dark !default;
+
+$default-link-color: $blue !default;
+$default-link-active-color: $dark-blue !default;
+$default-link-weight: null !default;
+
+$default-text-color: $dark !default;
+$default-border-color: $light-grey !default;
+$default-translucent-opacity: 0.4 !default;
 
 $default-transition-duration: $transition-fast !default;
 
-// NOTE: don't touch this unles syou know what you're doing
+// NOTE: don't touch this unless you know what you're doing
 $default-transition-easing: null !default;
 
-$default-shadow-opacity: 0.15 !default;
-$default-shadow-color: $color-dark !default;
+$default-shadow-opacity: 0.2 !default;
+$default-shadow-color: $dark !default;

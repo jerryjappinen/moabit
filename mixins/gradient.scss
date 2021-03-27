@@ -1,7 +1,7 @@
 @mixin gradient (
   $direction: 0deg,
-  $color1: rgba(#000, 0),
-  $color2: #000
+  $color1: #000,
+  $color2: translucent($color1)
 ) {
   background-image: linear-gradient(
     $direction,
@@ -10,17 +10,26 @@
   );
 }
 
-@mixin gradient-dark ($direction: 0deg, $hue: 205, $saturation: 12%, $luminance: 26%) {
-	background-image: linear-gradient($direction, hsla($hue, $saturation, $luminance, 0),
-		hsla($hue, $saturation, $luminance, 0.06) 80%,
-		hsla($hue, $saturation, $luminance, 0.12));
+@mixin vertical-gradient ($color1: null, $color2: null) {
+  @include gradient(0deg, $color1, $color2);
 }
 
-@mixin gradient-white ($direction: 0deg, $max: 1) {
-	background-image: linear-gradient(
-		$direction,
-		rgba($color-white, 0),
-		rgba($color-white, ($max/2)) 50%,
-		rgba($color-white, $max)
-	);
+@mixin reverse-vertical-gradient ($color1: null, $color2: null) {
+  @include gradient(180deg, $color1, $color2);
+}
+
+@mixin horizontal-gradient ($color1: null, $color2: null) {
+  @include gradient(90deg, $color1, $color2);
+}
+
+@mixin reverse-horizontal-gradient ($color1: null, $color2: null) {
+  @include gradient(270deg, $color1, $color2);
+}
+
+@mixin gradient-dark ($direction: 0deg, $opacity1: 0, $opacity2: 1) {
+  @include gradient($direction, translucent($dark, $opacity1), translucent($dark, $opacity2));
+}
+
+@mixin gradient-white ($direction: 0deg, $opacity1: 0, $opacity2: 1) {
+  @include gradient($direction, translucent($white, $opacity1), translucent($white, $opacity2));
 }

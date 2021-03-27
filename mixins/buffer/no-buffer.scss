@@ -1,5 +1,5 @@
 @mixin no-buffer {
-	padding: 0;
+  padding: 0;
 }
 
 
@@ -7,13 +7,13 @@
 // Pane
 
 @mixin no-buffer-horizontal {
-	padding-left: 0;
-	padding-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 @mixin no-buffer-vertical {
-	padding-top: 0;
-	padding-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 
@@ -21,17 +21,17 @@
 // Single
 
 @mixin no-buffer-top {
-	padding-top: 0;
+  padding-top: 0;
 }
 
 @mixin no-buffer-right {
-	padding-right: 0;
+  padding-right: 0;
 }
 
 @mixin no-buffer-bottom {
-	padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 @mixin no-buffer-left {
-	padding-left: 0;
+  padding-left: 0;
 }

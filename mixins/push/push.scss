@@ -1,54 +1,54 @@
 // Margins
 
-@mixin push {
-	@include push-horizontal;
-	@include push-vertical;
+@mixin push ($step: 1) {
+  @include push-horizontal($step);
+  @include push-vertical($step);
 }
 
-@mixin push-even {
-	@include push-horizontal;
-	@include push-vertical-even;
+@mixin push-even ($step: 1) {
+  @include push-horizontal($step);
+  @include push-vertical-even($step);
 }
 
 
 
 // Pane
 
-@mixin push-horizontal {
-	@include push-left;
-	@include push-right;
+@mixin push-horizontal ($step: 1) {
+  @include push-left($step);
+  @include push-right($step);
 }
 
-@mixin push-vertical {
-	@include push-top;
-	@include push-bottom;
+@mixin push-vertical ($step: 1) {
+  @include push-top($step);
+  @include push-bottom($step);
 }
 
-@mixin push-vertical-even {
-	@include push-top-even;
-	@include push-bottom;
+@mixin push-vertical-even ($step: 1) {
+  @include push-top-even($step);
+  @include push-bottom($step);
 }
 
 
 
 // Single
 
-@mixin push-top {
-	margin-top: $buffer-tight;
+@mixin push-top ($step: 1) {
+  margin-top: $step * $buffer-tight;
 }
 
-@mixin push-top-even {
-	margin-top: $buffer;
+@mixin push-top-even ($step: 1) {
+  margin-top: $step * $buffer;
 }
 
-@mixin push-right {
-	margin-right: $buffer;
+@mixin push-right ($step: 1) {
+  margin-right: $step * $buffer;
 }
 
-@mixin push-bottom {
-	margin-bottom: $buffer;
+@mixin push-bottom ($step: 1) {
+  margin-bottom: $step * $buffer;
 }
 
-@mixin push-left {
-	margin-left: $buffer;
+@mixin push-left ($step: 1) {
+  margin-left: $step * $buffer;
 }

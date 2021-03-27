@@ -1,0 +1,37 @@
+$radius-round: 9999em;
+
+@mixin round {
+  @include radius($radius-round);
+}
+
+@mixin round-left {
+  @include radius-left($radius-round);
+}
+
+@mixin round-right {
+  @include radius-right($radius-round);
+}
+
+@mixin round-top {
+  @include radius-top($radius-round);
+}
+
+@mixin round-top-left {
+  @include radius-top-left($radius-round);
+}
+
+@mixin round-top-right {
+  @include radius-top-right($radius-round);
+}
+
+@mixin round-bottom {
+  @include radius-bottom($radius-round);
+}
+
+@mixin round-bottom-left {
+  @include radius-bottom-left($radius-round);
+}
+
+@mixin round-bottom-right {
+  @include radius-bottom-right($radius-round);
+}

@@ -1,0 +1,65 @@
+@mixin uppercase {
+  text-transform: uppercase;
+
+  @if $font-size-uppercase {
+    font-size: $font-size-uppercase;
+  }
+
+}
+
+@mixin small-font {
+  font-size: $font-size-small;
+}
+
+@mixin system-font {
+  font-family: $font-system;
+}
+
+@mixin large-font {
+  font-size: $font-size-large;
+  // line-height: $line-height-loose;
+
+  @include tablet {
+    font-size: 1.4em;
+  }
+
+}
+
+@mixin headline-font {
+  font-size: $font-size-large;
+
+  @if $line-height-headline {
+    line-height: $line-height-headline;
+  }
+
+  @if $font-headline {
+    font-family: $font-headline;
+  }
+
+}
+
+@mixin discreet {
+  color: $default-discreet-text-color;
+}
+
+@mixin strong {
+  font-weight: $font-weight-bold;
+}
+
+@mixin semi-strong {
+  font-weight: $font-weight-semibold;
+}
+
+@mixin link {
+  color: $default-link-color;
+
+  @if $default-link-weight {
+    font-weight: $default-link-weight;
+  }
+
+  &:hover,
+  &:active {
+    color: $default-link-active-color;
+  }
+
+}

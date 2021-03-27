@@ -8,7 +8,18 @@
 }
 
 @mixin grid-columns ($column-count: 2) {
-  grid-template-columns: repeat($column-count, 1fr);
+  grid-template-columns: repeat($column-count, minmax(0, 1fr));
+}
+
+
+
+@mixin grid-gap ($column-gap: 0, $row-gap: $column-gap) {
+  @include grid-column-gap($column-gap);
+
+  @if variable-exists(row-gap) and $row-gap != null {
+    @include grid-row-gap($row-gap);
+  }
+
 }
 
 @mixin grid-column-gap ($column-gap) {
@@ -19,14 +30,7 @@
   grid-row-gap: $row-gap;
 }
 
-@mixin grid-gap ($column-gap: 0, $row-gap: null) {
-  @include grid-column-gap($column-gap);
 
-  @if variable-exists(row-gap) and $row-gap != null {
-    @include grid-row-gap($row-gap);
-  }
-
-}
 
 // Hack to enforce square cells
 // https://css-tricks.com/aspect-ratios-grid-items/
