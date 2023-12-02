@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 // Remove the unit of a length
 @function number ($number) {
   @if type-of($number) == 'number' and not unitless($number) {
